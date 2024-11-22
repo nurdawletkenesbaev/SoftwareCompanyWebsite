@@ -1,0 +1,18 @@
+.slick-slide {
+  opacity: 0.5;
+}
+
+.slick-center + .slick-slide {
+  opacity: 1;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-slide {
+  padding: 0 10px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=Customers.css.map */

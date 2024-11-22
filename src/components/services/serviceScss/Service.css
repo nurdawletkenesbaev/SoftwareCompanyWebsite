@@ -1,0 +1,36 @@
+@charset "UTF-8";
+.slick-slide {
+  opacity: 0.5 !important;
+}
+
+.slick-center.slick-center {
+  opacity: 1 !important;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.slick-dots {
+  text-align: center;
+  transform: translateY(20px);
+  margin-top: 45px;
+}
+
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li button::before {
+  content: "";
+}
+
+/* Faol dot uchun rang */
+.slick-dots li.slick-active button {
+  background: linear-gradient(90deg, #f76680, #57007b);
+  box-shadow: 0 0 5px #57007b;
+  border: none;
+  transform: scale(1.2); /* Katta ko‘rinish */
+}/*# sourceMappingURL=Service.css.map */
