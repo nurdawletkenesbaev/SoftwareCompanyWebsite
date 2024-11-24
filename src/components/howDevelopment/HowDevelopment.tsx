@@ -1,6 +1,6 @@
 import HeadingPage from '../pageComponents/HeadingPage'
 import HowDevelopmentCard from './howDevelopmentComp/HowDevelopmentCard'
-import trophy from '../../images/images/trophy.png'
+import trophy from '@/images/images/trophy.png'
 
 interface list {
   title: string

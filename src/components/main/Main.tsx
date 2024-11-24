@@ -1,5 +1,5 @@
-import mainImg from '../../images/images/mainImg.png'
-import circle from '../../images/icons/circle.png'
+import mainImg from '@/images/images/mainImg.png'
+import circle from '@/images/icons/circle.png'
 const Main = () => {
   return (
     <div className='relative flex px-[5%] items-center h-[calc(100vh-60px)] gap-[30px]'>

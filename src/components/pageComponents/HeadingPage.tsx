@@ -1,5 +1,5 @@
 import React from 'react'
-import line from '../../images/icons/line.png'
+import line from '@/images/icons/line.png'
 interface Props {
   heading: string
   span: string

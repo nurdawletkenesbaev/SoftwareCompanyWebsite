@@ -1,4 +1,4 @@
-import sun from '../../../images/images/sun.png'
+import sun from '@/images/images/sun.png'
 const HireTopDev = () => {
   return (
     <div className='px-[5%] my-[100px]'>

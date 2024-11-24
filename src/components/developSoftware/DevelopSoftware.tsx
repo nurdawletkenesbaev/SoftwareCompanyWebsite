@@ -1,16 +1,9 @@
-// import { AiFillPauseCircle, AiFillPlayCircle } from 'react-icons/ai'
 import { BsArrowRight } from 'react-icons/bs'
-import video from '../../images/videos/video.mp4'
+import video from '@/images/videos/video.mp4'
 import HeadingPage from '../pageComponents/HeadingPage'
 import ReactPlayer from 'react-player'
-// import { useState } from 'react'
 
 const DevelopSoftware = () => {
-//   const [isPlaying, setIsPlaying] = useState<boolean>(false) 
-
-//   const handlePlayPause = () => {
-//     setIsPlaying(!isPlaying) 
-//   }
   return (
     <div className='px-[5%] flex gap-[50px] py-[80px]'>
       <div className='w-[50%]'>
@@ -38,7 +31,6 @@ const DevelopSoftware = () => {
       </div>
       <div className='w-[50%] h-full relative  '>
         <ReactPlayer
-        //   playing={isPlaying}
           controls={true}
           className='react-player'
           url={video}
@@ -46,20 +38,6 @@ const DevelopSoftware = () => {
           height='100%'
           style={{ borderRadius: '10px', height: '100%' }}
         />
-        {/* <div
-          className={`bg-white opacity-60 p-[10px] backdrop-blur-md rounded-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] flex items-center justify-center ${
-            isPlaying && 'hidden'
-          } hover:${isPlaying && 'flex'}`}
-        >
-          <button
-            onClick={() => {
-              handlePlayPause()
-            }}
-            className={`text-[50px] text-[#57007B] `}
-          >
-            {!isPlaying ? <AiFillPlayCircle /> : <AiFillPauseCircle />}
-          </button>
-        </div> */}
       </div>
     </div>
   )

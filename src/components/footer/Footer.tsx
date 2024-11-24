@@ -3,7 +3,7 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { CgFacebook } from 'react-icons/cg'
 import Logo from '../header/headerComponents/Logo'
-import google from '../../images/images/google.png'
+import google from '@/images/images/google.png'
 
 const Footer = () => {
   return (
