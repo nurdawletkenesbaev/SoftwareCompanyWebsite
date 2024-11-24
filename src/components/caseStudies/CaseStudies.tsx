@@ -1,10 +1,10 @@
-import img1 from '../../images/caseStudies/caseStudies1.png'
-import img2 from '../../images/caseStudies/caseStudies2.png'
-import img3 from '../../images/caseStudies/caseStudies3.png'
-import arrow from '../../images/caseStudies/arrow.png'
+import img1 from '@/images/caseStudies/caseStudies1.png'
+import img2 from '@/images/caseStudies/caseStudies2.png'
+import img3 from '@/images/caseStudies/caseStudies3.png'
+import arrow from '@/images/caseStudies/arrow.png'
 import CaseStudiesCard from './caseStudeisComponents/CaseStudiesCard'
 import HeadingPage from '../pageComponents/HeadingPage'
-import ellipse from '../../images/icons/ellipse.png'
+import ellipse from '@/images/icons/ellipse.png'
 
 interface caseInfo {
   image: string

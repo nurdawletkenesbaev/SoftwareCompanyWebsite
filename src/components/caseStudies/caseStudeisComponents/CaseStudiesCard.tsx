@@ -1,4 +1,4 @@
-import arrow from '../../../images/caseStudies/arrow.png'
+import arrow from '@/images/caseStudies/arrow.png'
 import React from 'react'
 
 interface Props {
