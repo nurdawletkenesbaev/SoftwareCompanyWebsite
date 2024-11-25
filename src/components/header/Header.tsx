@@ -7,7 +7,7 @@ const Header = () => {
       </div>
       <ul className='flex gap-[40px] text-[16px] text-[#4A5568]'>
         <li>
-          <a href='#'>About Us</a>
+          <a href='#about-us'>About Us</a>
         </li>
         <li>
           <a href='#services'>Services</a>
