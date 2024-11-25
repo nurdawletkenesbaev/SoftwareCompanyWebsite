@@ -1,5 +1,5 @@
 import ourDesign1 from '@/images/icons/ourDesign/ourDesign1.png'
-import ourDesign2 from '@/images/icons/ourDesign/ourDesign2.png'
+import ourDesign2 from '@/images/icons/ourDesign/OurDesign2.png'
 import ourDesign3 from '@/images/icons/ourDesign/ourDesign3.png'
 import ourDesign4 from '@/images/icons/ourDesign/ourDesign4.png'
 import ourDesign5 from '@/images/icons/ourDesign/ourDesign5.png'
