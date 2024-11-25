@@ -38,7 +38,7 @@ const caseStudeisInfo: caseInfo[] = [
 ]
 const CaseStudies = () => {
   return (
-    <div className='bg-[#F7F7FA] px-[5%] py-[80px] relative'>
+    <div id='case-studies' className='bg-[#F7F7FA] px-[5%] py-[80px] relative'>
       <div className='absolute top-[100px] left-[25%]'>
         <img src={ellipse} alt='' />
       </div>

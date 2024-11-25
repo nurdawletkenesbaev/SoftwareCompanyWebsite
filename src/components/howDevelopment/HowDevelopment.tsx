@@ -42,7 +42,10 @@ const cardsInfo: list[] = [
 
 const HowDevelopment = () => {
   return (
-    <div className='px-[5%] pt-[70px] border-t-[1px] border-[#E7DAED] bg-white'>
+    <div
+      className='px-[5%] pt-[70px] border-t-[1px] border-[#E7DAED] bg-white'
+      id='how-it-works'
+    >
       <HeadingPage
         heading='How development'
         span='through Alcaline works'

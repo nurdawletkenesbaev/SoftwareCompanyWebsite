@@ -62,7 +62,7 @@ const Services = () => {
     arrows: false,
   }
   return (
-    <div className='bg-[#F9F9F9] py-[50px]'>
+    <div className='bg-[#F9F9F9] py-[50px]' id='services'>
       <h1 className='text-[35px] font-bold text-center text-[#1A202C]'>
         Services we offer
       </h1>

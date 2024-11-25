@@ -64,7 +64,7 @@ const cardsInformation: cardInfo[] = [
 ]
 const OurDesign = () => {
   return (
-    <div className='pt-[70px] px-[5%] pb-[90px] bg-[#F7F7FA] '>
+    <div id='blog' className='pt-[70px] px-[5%] pb-[90px] bg-[#F7F7FA] '>
       <HeadingPage
         heading='Our design and'
         span='development approach'
