@@ -34,7 +34,7 @@ const Header = () => {
       </ul>
       <div className='flex items-center gap-[15px]'>
         <button
-          className='text-[22px] font-bold'
+          className='text-[22px] font-bold md:hidden'
           onClick={() => dispatch(toggleMenu(true))}
         >
           <CgMenuRight />
