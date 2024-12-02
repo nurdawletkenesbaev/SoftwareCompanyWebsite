@@ -8,6 +8,7 @@ import front6 from '@/images/techStack/techStact6.png'
 import front7 from '@/images/techStack/techStact7.png'
 import front8 from '@/images/techStack/techStact8.png'
 import front9 from '@/images/techStack/techStact9.png'
+import './techStackScss/techStack.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { changeActiveTechStack } from '../../store/slices/pageActionSlice'
 import { RootState } from '../../store/store'
@@ -92,7 +93,7 @@ const TechStack = () => {
   return (
     <div className='px-[5%] py-[80px] bg-white'>
       <HeadingPage heading='Our' span='Tech Stack' isCenter={true} />
-      <div className='flex gap-[30px] justify-center mt-[30px] mb-[60px]'>
+      <div className='flex gap-[30px] justify-center mt-[30px] mb-[60px] overflow-x-auto'>
         {techStack.map((item) => (
           <div
             onClick={() => dispatch(changeActiveTechStack(item.id))}

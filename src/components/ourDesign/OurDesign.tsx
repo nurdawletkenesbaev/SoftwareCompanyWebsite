@@ -70,11 +70,11 @@ const OurDesign = () => {
         span='development approach'
         isCenter={true}
       />
-      <div className='grid grid-cols-2 gap-[25px] mt-[80px]'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-[25px] mt-[80px]'>
         {cardsInformation.map((item) => (
           <div
             key={item.title}
-            className='flex gap-[20px] bg-[#FAFAFA] px-[33px] py-[50px] items-start'
+            className='flex gap-[20px] bg-[#FAFAFA]  px-[25px] lg:px-[33px] py-[30px] lg:p-[40px] items-start'
           >
             <div>
               <div

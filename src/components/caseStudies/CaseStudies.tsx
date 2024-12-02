@@ -39,7 +39,7 @@ const caseStudeisInfo: caseInfo[] = [
 const CaseStudies = () => {
   return (
     <div id='case-studies' className='bg-[#F7F7FA] px-[5%] py-[80px] relative'>
-      <div className='absolute top-[100px] left-[25%]'>
+      <div className='hidden md:flex absolute md:top-[60px] lg:top-[100px] left-[25%]'>
         <img src={ellipse} alt='' />
       </div>
       <HeadingPage heading='Our recent' span='Case studies' isCenter={true} />

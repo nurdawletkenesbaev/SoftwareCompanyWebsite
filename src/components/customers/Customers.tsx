@@ -65,6 +65,32 @@ const Customers = () => {
     centerPadding: '0px',
     slidesToShow: 5,
     speed: 500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   }
   return (
     <div className='bg-white py-[80px] px-[5%] relative'>
@@ -119,11 +145,19 @@ const Customers = () => {
           ))}
         </Slider>
       </div>
-      <div className='absolute bottom-[-100px] z-[10]'>
-        <img src={arrow1} alt='' />
+      <div className='hidden md:flex md:absolute md:bottom-[-80px] lg:bottom-[-100px] z-[10]'>
+        <img
+          src={arrow1}
+          alt=''
+          className='w-[160px] md:w-[180px] lg:w-[200px]'
+        />
       </div>
-      <div className='absolute bottom-[-160px] z-[10] right-[10%]'>
-        <img src={arrow2} alt='' />
+      <div className='hidden md:flex md:absolute md:bottom-[-110px] lg:bottom-[-160px] z-[10] right-[10%]'>
+        <img
+          src={arrow2}
+          alt=''
+          className='w-[160px] md:w-[180px] lg:w-[200px] h-[170px] md:h-[200px]'
+        />
       </div>
     </div>
   )

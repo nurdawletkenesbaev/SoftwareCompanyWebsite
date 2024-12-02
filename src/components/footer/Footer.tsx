@@ -8,8 +8,8 @@ import google from '@/images/images/google.png'
 const Footer = () => {
   return (
     <div>
-      <div className='px-[5%] flex justify-between gap-[60px] pt-[35px] pb-[80px]'>
-        <div>
+      <div className='px-[5%] flex  justify-between flex-wrap gap-[60px] pt-[35px] pb-[80px]'>
+        <div className='max-w-[300px]'>
           <Logo />
           <p className='text-[18px] text-[#718096] font-[400] my-[20px]'>
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='text-[18px] text-[#718096]'>
+        <div className='text-[18px] text-[#718096] max-w-[300px]'>
           <span className='text-[#4A5568] text-[18px] font-bold'>
             Contact us
           </span>

@@ -28,16 +28,20 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
 }) => {
   return (
     <div
-      className={`flex gap-[100px] ${
+      className={`flex flex-col md:flex-row gap-[50px] md:gap-[100px] ${
         index % 2 !== 0 && 'flex-row-reverse'
       } items-center`}
     >
-      <div className='w-[50%]'>
-        <h1 className='text-[28px] font-[600]'>{title}</h1>
+      <div className='w-full md:w-[50%]'>
+        <h1 className='text-[24px] md:text-[26px] lg:text-[28px] font-[600]'>
+          {title}
+        </h1>
         <div className='mt-[30px] mb-[25px] flex flex-col gap-[20px]'>
-          <p className='text-[18px]'>{description}</p>
+          <p className='text-[14px] md:text-[16px] lg:text-[18px]'>
+            {description}
+          </p>
           <p
-            className='text-[18px]'
+            className='text-[14px] md:text-[16px] lg:text-[18px]'
             dangerouslySetInnerHTML={{
               __html: mainP,
             }}
@@ -59,8 +63,8 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
           </div>
         </div>
       </div>
-      <div className='w-[50%] relative'>
-        <img src={image} alt='' />
+      <div className='w-full md:w-[50%] relative'>
+        <img src={image} alt='' className='w-full' />
         <img
           src={circles[0]}
           alt=''

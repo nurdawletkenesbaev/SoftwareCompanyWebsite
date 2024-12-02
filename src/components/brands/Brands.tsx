@@ -51,7 +51,7 @@ const brandsList: brands[] = [
 const Brands = () => {
   const swiperRef = useRef<any>(null)
   return (
-    <div className='bg-white '>
+    <div className='bg-white'>
       <div className='px-[5%] pt-[70px] relative'>
         <HeadingPage
           heading='Meet the People'

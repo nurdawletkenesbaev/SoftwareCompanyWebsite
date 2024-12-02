@@ -52,16 +52,33 @@ const Resources: React.FC = () => {
     <div className='bg-white py-[90px]'>
       <HeadingPage heading='Featured' span='Resources' isCenter={true} />
       <div className='slider-container mt-[60px]'>
-        
         <Swiper
           loop={true}
-          slidesPerView={4}
+          slidesPerView={1}
           grid={{
             rows: 1,
           }}
           spaceBetween={30}
           modules={[Grid]}
           className='mySwiper'
+          breakpoints={{
+            460: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 50,
+            },
+          }}
         >
           {resourcesInfo.map((item) => (
             <SwiperSlide key={item.id}>
