@@ -51,37 +51,39 @@ const HowDevelopment = () => {
         span='through Alcaline works'
         isCenter={true}
       />
-      <div className='flex gap-[30px] mt-[80px] pl-[30px]'>
-        {cardsInfo.map(
-          (item, index) =>
-            index <= 2 && (
-              <HowDevelopmentCard
-                key={item.id}
-                index={index}
-                title={item.title}
-                description={item.description}
-                isTop={true}
-              />
-            )
-        )}
-      </div>
-      <div className='flex mt-[15px] items-center gap-[20px]'>
-        <div className='h-[2px] w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
-        <img src={trophy} alt='' />
-      </div>
-      <div className='flex justify-end gap-[30px] mt-[15px] pr-[30px]'>
-        {cardsInfo.map(
-          (item, index) =>
-            index > 2 && (
-              <HowDevelopmentCard
-                key={item.id}
-                index={index}
-                title={item.title}
-                description={item.description}
-                isTop={false}
-              />
-            )
-        )}
+      <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex sm:justify-between sm:gap-[20px] sm:flex-row md:flex-col '>
+        <div className='flex flex-col md:flex-row gap-[30px] pl-[30px]'>
+          {cardsInfo.map(
+            (item, index) =>
+              index <= 2 && (
+                <HowDevelopmentCard
+                  key={item.id}
+                  index={index}
+                  title={item.title}
+                  description={item.description}
+                  isTop={true}
+                />
+              )
+          )}
+        </div>
+        <div className='flex flex-col-reverse md:flex-row h-full mt-[15px] justify-center items-center gap-[20px]'>
+          <div className='md:h-[2px] w-[2px] md:w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
+          <img src={trophy} alt='' className='w-auto' />
+        </div>
+        <div className='flex flex-col md:flex-row md:justify-end gap-[30px] mt-[15px] pr-[30px]'>
+          {cardsInfo.map(
+            (item, index) =>
+              index > 2 && (
+                <HowDevelopmentCard
+                  key={item.id}
+                  index={index}
+                  title={item.title}
+                  description={item.description}
+                  isTop={false}
+                />
+              )
+          )}
+        </div>
       </div>
     </div>
   )

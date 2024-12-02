@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <a href='#' className='flex items-center gap-[5px]'>
       <img src={logo} alt='' />
-      <span className='logo-font text-[24px] font-bold'>AralHub</span>
+      <span className='logo-font text-[24px] font-bold'>АралХаб</span>
     </a>
   )
 }

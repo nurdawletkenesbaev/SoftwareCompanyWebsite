@@ -17,37 +17,37 @@ const services: cardsInfo[] = [
   {
     image: icon1,
     id: 1,
-    title: 'Mobile App Development',
+    title: 'Разработка мобильных приложений',
     description:
-      'A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.',
+      'Мы создаем инновационные мобильные приложения, которые помогают вашему бизнесу выйти на новый уровень. Наши приложения разрабатываются под платформы iOS и Android, основываясь на ваших потребностях и целях.',
   },
   {
     image: icon2,
     id: 2,
-    title: 'Mobile App Development',
+    title: 'Индивидуальная разработка веб-сайтов',
     description:
-      'A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.',
+      'Ваш веб-сайт — это цифровое лицо вашего бизнеса. Мы помогаем создавать качественные, удобные и эффективные веб-сайты, которые соответствуют вашим маркетинговым целям и ожиданиям клиентов.',
   },
   {
     image: icon3,
     id: 3,
-    title: 'Web Design & Development',
+    title: 'Решения для электронной коммерции',
     description:
-      'A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.',
+      'Мы предоставляем полный спектр услуг для создания и развития вашего интернет-магазина: интеграция платежных систем, настройка платформ и многое другое.',
   },
   {
     image: icon1,
     id: 4,
-    title: 'Software Testing Service',
+    title: 'Дизайн пользовательских интерфейсов и опыта',
     description:
-      'A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.',
+      'Мы разрабатываем привлекательные и интуитивно понятные интерфейсы, обеспечивая лучший пользовательский опыт для ваших клиентов.',
   },
   {
     image: icon2,
     id: 5,
-    title: 'Software Testing Service',
+    title: 'Консалтинг и разработка стратегии',
     description:
-      'A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.',
+      'Мы анализируем ваши бизнес-потребности и предлагаем технологические решения и стратегии, которые помогут вашему продукту выделиться и добиться успеха на рынке.',
   },
 ]
 const Services = () => {
@@ -99,7 +99,7 @@ const Services = () => {
   return (
     <div className='bg-[#F9F9F9] py-[50px]' id='services'>
       <h1 className='text-[28px] md:text-[31px] lg:text-[35px] font-bold text-center text-[#1A202C]'>
-        Services we offer
+        Услуги, которые мы предлагаем
       </h1>
       <div className='slider-container mt-[40px] box-border mb-[20px]'>
         <Slider {...settings}>

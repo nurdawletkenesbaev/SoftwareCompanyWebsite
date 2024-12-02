@@ -14,22 +14,22 @@ const Header = () => {
       </div>
       <ul className='hidden lg:flex gap-[40px] text-[16px] text-[#4A5568]'>
         <li>
-          <a href='#about-us'>About Us</a>
+          <a href='#about-us'>О нас</a>
         </li>
         <li>
-          <a href='#services'>Services</a>
+          <a href='#services'>Услуги</a>
         </li>
         <li>
-          <a href='#case-studies'>Case Studies</a>
+          <a href='#case-studies'>Кейсы</a>
         </li>
         <li>
-          <a href='#blog'>Blog</a>
+          <a href='#blog'>Блог</a>
         </li>
         <li>
-          <a href='#how-it-works'>How it Works</a>
+          <a href='#how-it-works'>Как это работает</a>
         </li>
         <li>
-          <a href='#hire'>Hire</a>
+          <a href='#hire'>Нанять</a>
         </li>
       </ul>
       <div className='flex items-center gap-[15px]'>
@@ -40,7 +40,7 @@ const Header = () => {
           <CgMenuRight />
         </button>
         <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
-          <a href='#'>Contact us</a>
+          <a href='#'>Свяжитесь с нами</a>
         </button>
       </div>
       <div
@@ -62,7 +62,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#about-us'
             >
-              About Us
+              О нас
             </a>
           </li>
           <li className=''>
@@ -70,7 +70,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#services'
             >
-              Services
+              Услуги
             </a>
           </li>
           <li className=''>
@@ -78,7 +78,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#case-studies'
             >
-              Case Studies
+              Кейсы
             </a>
           </li>
           <li className=''>
@@ -86,7 +86,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#blog'
             >
-              Blog
+              Блог
             </a>
           </li>
           <li className=''>
@@ -94,7 +94,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#how-it-works'
             >
-              How it Works
+              Как это работает
             </a>
           </li>
           <li className=''>
@@ -102,7 +102,7 @@ const Header = () => {
               className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
               href='#hire'
             >
-              Hire
+              Нанять
             </a>
           </li>
         </ul>

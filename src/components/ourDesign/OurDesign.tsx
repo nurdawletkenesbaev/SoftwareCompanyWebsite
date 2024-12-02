@@ -78,17 +78,21 @@ const OurDesign = () => {
           >
             <div>
               <div
-                className={`bg-[linear-gradient(90deg,_${item.from},_${item.to})] rounded-md flex items-center justify-center w-[60px] h-[59px] `}
+                className={`bg-[linear-gradient(90deg,_${item.from},_${item.to})] rounded-md flex items-center justify-center w-[50px] md:w-[55px] lg:w-[60px] h-[53px] md:h-[56px] lg:h-[59px]`}
               >
-                <img src={item.image} alt='' className='w-[40px]' />
+                <img
+                  src={item.image}
+                  alt=''
+                  className='w-[34px] md:w-[37px] lg:w-[40px]'
+                />
               </div>
             </div>
             <div>
-              <span className='text-[#1A202C] font-[600] text-[20px]'>
+              <span className='text-[#1A202C] font-[600] text-[16px] md:text-[18px] lg:text-[20px]'>
                 {item.title}
               </span>
               <p
-                className='text-[#4A5568] text-[14px]'
+                className='text-[#4A5568] text-[12px] md:text-[13px] lg:text-[14px]'
                 dangerouslySetInnerHTML={{
                   __html: item.description,
                 }}

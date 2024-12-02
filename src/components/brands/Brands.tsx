@@ -72,12 +72,9 @@ const Brands = () => {
             <BsArrowRight />
           </button>
         </div>
-        {/* <div className='absolute z-[-2] bottom-[-60px] left-[60%]'>
-          <img src={circle} alt='' />
-        </div> */}
       </div>
 
-      <div className='bg-[#F7F7FA] py-[40px] mt-[20px] relative'>
+      <div className='bg-[#F7F7FA] py-[20px] md:py-[30px] lg:py-[40px] mt-[20px] relative'>
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           loop={true}
