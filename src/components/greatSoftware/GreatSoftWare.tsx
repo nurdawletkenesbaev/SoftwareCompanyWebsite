@@ -89,8 +89,8 @@ const GreatSoftWare = () => {
   return (
     <div className='px-[5%] py-[80px]'>
       <HeadingPage
-        heading='Way of building'
-        span='Great Software'
+        heading='Способ создания'
+        span='отличного программного обеспечения'
         isCenter={true}
       />
       <div className='flex flex-col gap-[80px] mt-[73px]'>

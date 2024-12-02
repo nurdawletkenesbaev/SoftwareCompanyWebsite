@@ -12,44 +12,42 @@ const Footer = () => {
         <div className='max-w-[300px]'>
           <Logo />
           <p className='text-[18px] text-[#718096] font-[400] my-[20px]'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            Достигайте успеха с инновационными решениями и качественным
+            дизайном.
           </p>
           <img src={google} alt='' />
         </div>
         <div>
-          <span className='text-[#4A5568] text-[18px] font-bold'>Links</span>
+          <span className='text-[#4A5568] text-[18px] font-bold'>Ссылки</span>
           <ul className='mt-[20px] text-[16px] text-[#718096]'>
             <li className='py-[5px]'>
-              <a href='#'>About Us</a>
+              <a href='#'>О нас</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>Services</a>
+              <a href='#'>Услуги</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>Case Studies</a>
+              <a href='#'>Примеры работ</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>How it works</a>
+              <a href='#'>Как это работает</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>Blog</a>
+              <a href='#'>Блог</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>Careers</a>
+              <a href='#'>Карьера</a>
             </li>
             <li className='py-[5px]'>
-              <a href='#'>Areas We Serve</a>
+              <a href='#'>Области, которые мы обслуживаем</a>
             </li>
           </ul>
         </div>
         <div className='text-[18px] text-[#718096] max-w-[300px]'>
-          <span className='text-[#4A5568] text-[18px] font-bold'>
-            Contact us
-          </span>
+          <span className='text-[#4A5568] text-[18px] font-bold'>Контакты</span>
           <p className='my-[20px]'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.{' '}
+            Свяжитесь с нами для обсуждения вашего проекта и получения
+            консультации.{' '}
           </p>
           <p>+923183561921</p>
         </div>
@@ -72,7 +70,7 @@ const Footer = () => {
       </div>
       <div className='py-[35px] border-t-[1px] border-[#CDD5EO] text-center'>
         <span className='text-[14px] text-[#4A5568] '>
-          © 2023 Copyright by IK Developers. All rights reserved.
+          © 2023 AralHub. Все права защищены.
         </span>
       </div>
     </div>

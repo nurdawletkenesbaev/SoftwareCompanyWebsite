@@ -50,7 +50,7 @@ const resourcesInfo: cardInfo[] = [
 const Resources: React.FC = () => {
   return (
     <div className='bg-white py-[90px]'>
-      <HeadingPage heading='Featured' span='Resources' isCenter={true} />
+      <HeadingPage heading='Избранные' span='ресурсы' isCenter={true} />
       <div className='slider-container mt-[60px]'>
         <Swiper
           loop={true}

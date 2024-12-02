@@ -92,7 +92,7 @@ const TechStack = () => {
   const dispatch = useDispatch()
   return (
     <div className='px-[5%] py-[80px] bg-white'>
-      <HeadingPage heading='Our' span='Tech Stack' isCenter={true} />
+      <HeadingPage heading='Наши' span='Технологии' isCenter={true} />
       <div className='flex gap-[30px] justify-center mt-[30px] mb-[60px] overflow-x-auto'>
         {techStack.map((item) => (
           <div

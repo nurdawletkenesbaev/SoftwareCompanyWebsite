@@ -16,23 +16,23 @@ interface caseInfo {
 const caseStudeisInfo: caseInfo[] = [
   {
     image: img1,
-    title: 'Website Design for SCFC Canada',
+    title: 'Дизайн веб-сайта для AralHub',
     description:
-      'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
+      'AralHub основан на видении и четкой цели предоставлять выдающиеся услуги в области веб-разработки и цифрового маркетинга. Обязавшись предоставлять лучшие решения своим клиентам, AralHub зарекомендовал себя как надежный партнер в цифровом пространстве. Имея команду экспертов с многолетним опытом работы в отрасли, AralHub предлагает инновационные и индивидуально подобранные решения в области веб-дизайна и маркетинга для удовлетворения потребностей каждого клиента.',
     id: 1,
   },
   {
     image: img2,
-    title: 'Website Design for SCFC Canada',
+    title: 'Веб-разработка для AralHub',
     description:
-      'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
+      'AralHub предоставляет услуги веб-разработки высшего класса с акцентом на производительность, пользовательский опыт и новейшие технологии. От адаптивного дизайна до сложных серверных решений, мы гарантируем, что каждый проект будет настроен с учетом специфических потребностей наших клиентов. Наша команда опытных разработчиков и дизайнеров тесно сотрудничает с клиентами, чтобы воплотить их идеи в реальность, создавая высококачественные, масштабируемые и безопасные веб-сайты, которые выделяются на современном конкурентном рынке',
     id: 2,
   },
   {
     image: img3,
-    title: 'Website Design for SCFC Canada',
+    title: 'Цифровые маркетинговые решения для AralHub',
     description:
-      'Born out of a vision, a single-minded objective that puts service before anything else, Swift Clearance and Forwarding Corp. surging forth to deliver the best services in the shipping and logistics scenario. Its meteoric rise stems out of a solid foundation. The management boasts of over 20 years of rich and varied experience in the shipping and freight forwarding industry.',
+      'В AralHub мы специализируемся на предоставлении комплексных цифровых маркетинговых услуг, которые способствуют росту и повышению онлайн-видимости. От SEO и маркетинга в социальных сетях до платной рекламы и создания контента, наша команда использует стратегии, основанные на данных, чтобы гарантировать, что ваш бренд достигнет своего полного потенциала. Мы верим в построение долгосрочных отношений с нашими клиентами, помогая им достигать устойчивого успеха в цифровом мире.',
     id: 3,
   },
 ]
@@ -42,7 +42,11 @@ const CaseStudies = () => {
       <div className='hidden md:flex absolute md:top-[60px] lg:top-[100px] left-[25%]'>
         <img src={ellipse} alt='' />
       </div>
-      <HeadingPage heading='Our recent' span='Case studies' isCenter={true} />
+      <HeadingPage
+        heading='Наши последние'
+        span='кейс-исследования'
+        isCenter={true}
+      />
       <div className='flex flex-col gap-[35px] mt-[80px]'>
         {caseStudeisInfo.map((item) => (
           <CaseStudiesCard
@@ -58,7 +62,7 @@ const CaseStudies = () => {
           href='#'
           className='flex gap-[10px] items-center bg-gradient-to-r from-[#F76680] to-[#57007B] text-transparent bg-clip-text text-[24px] font-[600]'
         >
-          Read more case studies{' '}
+          Читайте другие кейс-исследования{' '}
           <img src={arrow} alt='' className='w-[20px] translate-y-[3px]' />
         </a>
       </div>

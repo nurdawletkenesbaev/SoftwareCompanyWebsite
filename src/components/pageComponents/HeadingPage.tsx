@@ -16,7 +16,7 @@ const HeadingPage: React.FC<Props> = ({ heading, span, isCenter }) => {
           isCenter && 'text-center'
         } text-[#1A202C] text-[28px] md:text-[31px] lg:text-[35px] mt-[20px]`}
       >
-        {heading}
+        {heading} <br />
         <span className='font-bold'> {span}</span>
       </h1>
     </div>

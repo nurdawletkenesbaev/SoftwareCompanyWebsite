@@ -54,8 +54,8 @@ const Brands = () => {
     <div className='bg-white'>
       <div className='px-[5%] pt-[70px] relative'>
         <HeadingPage
-          heading='Meet the People'
-          span='We are Working With'
+          heading='Познакомьтесь с людьми,'
+          span='с которыми мы работаем'
           isCenter={false}
         />
         <div className='flex justify-end gap-[10px]'>

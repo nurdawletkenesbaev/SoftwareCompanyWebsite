@@ -9,21 +9,22 @@ const DevelopSoftware = () => {
       <div className='w-full md:w-[50%]'>
         <HeadingPage
           isCenter={false}
-          heading='Leading companies trust us'
-          span='to develop software'
+          heading='Ведущие компании доверяют нам'
+          span='разработку программного обеспечения.'
         />
         <p className='text-[#718096] font-[400] text-[14px] md:text-[16px] lg:text-[18px] leading-7 md:leading-8  lg:leading-9 my-[20px] md:my-[25px] lg:my-[30px]'>
-          We{' '}
+          Мы{' '}
           <span className='bg-gradient-to-r from-[#F76680] to-[#57007B] inline-block text-transparent bg-clip-text'>
-            add development capacity
+            увеличиваем возможности разработки
           </span>{' '}
-          to tech teams. Our value isn’t limited to building teams but is
-          equally distributed across the project lifecycle. We are a custom
-          software development company that guarantees the successful delivery
-          of your project.
+          для технических команд. Наша ценность не ограничивается только
+          созданием команд, она равномерно распределена на протяжении всего
+          жизненного цикла проекта. Мы — компания по разработке индивидуального
+          программного обеспечения, которая гарантирует успешную доставку вашего
+          проекта.
         </p>
         <a className='flex items-center gap-[10px] text-[#57007B] text-[16px] cursor-pointer'>
-          See more Informations{' '}
+          Увидеть больше информации{' '}
           <span>
             <BsArrowRight />
           </span>
