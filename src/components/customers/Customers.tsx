@@ -94,15 +94,15 @@ const Customers = () => {
   }
   return (
     <div className='bg-white py-[80px] px-[5%] relative'>
-      <div>
+      <div className='col-start-2'>
         <HeadingPage
           heading='Why cutomers love'
           span='working with us'
           isCenter={true}
         />
       </div>
-      <div className='flex justify-between mt-[50px] gap-[50px] items-center'>
-        <div>
+      <div className='grid md:flex justify-between mt-[50px] gap-[50px] items-center'>
+        <div className='row-start-2'>
           <button
             onClick={() => sliderRef.current?.slickPrev()}
             className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
@@ -110,11 +110,11 @@ const Customers = () => {
             <BsArrowLeft />
           </button>
         </div>
-        <div className='max-w-[700px] flex justify-between gap-[40px]'>
+        <div className='row-start-1 col-start-1 col-end-3 max-w-[700px] flex justify-between gap-[40px]'>
           <div className='flex flex-col justify-start'>
             <img src={fluentComma1} alt='' className='w-[100px]' />
           </div>
-          <p className='text-[18px] text-center text-[#718096] leading-9'>
+          <p className='text-[14px] md:text-[16px] lg:text-[18px] text-center text-[#718096] leading-7 md:leading-8 lg:leading-9'>
             Without any doubt I recommend Alcaline Solutions as one of the best
             web design and digital marketing agencies. One of the best agencies
             I’ve came across so far. Wouldn’t be hesitated to introduce their
@@ -124,7 +124,7 @@ const Customers = () => {
             <img src={fluentComma2} alt='' className='w-[100px]' />
           </div>
         </div>
-        <div>
+        <div className='row-start-2 col-satrt-2 flex justify-end'>
           <button
             onClick={() => sliderRef.current?.slickNext()}
             className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
