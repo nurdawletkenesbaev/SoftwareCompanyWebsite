@@ -12,6 +12,7 @@ interface cardInfo {
   from: string
   to: string
 }
+
 const cardsInformation: cardInfo[] = [
   {
     image: ourDesign1,
@@ -68,6 +69,7 @@ const cardsInformation: cardInfo[] = [
     // Unlike other companies, we are a <span style="background: linear-gradient(#F76680, #57007B); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.
   },
 ]
+
 const OurDesign = () => {
   return (
     <div id='blog' className='pt-[70px] px-[5%] pb-[90px] bg-[#F7F7FA] '>
