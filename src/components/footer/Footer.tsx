@@ -1,5 +1,4 @@
 import { FaTelegramPlane } from 'react-icons/fa'
-import { FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { CgFacebook } from 'react-icons/cg'
