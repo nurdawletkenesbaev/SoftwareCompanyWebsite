@@ -10,38 +10,32 @@ interface list {
 const cardsInfo: list[] = [
   {
     title: 'Планирование и анализ требований',
-    description: `В AralHub анализ требований проводится через командные обсуждения и сбор идей.
-    На каждом этапе задачи и цели определяются на основе четкого плана.`,
+    description: `В AralHub требования анализируются через обсуждения и сбор идей, задачи и цели строятся по плану.`,
     id: 1,
   },
   {
     title: 'Собираем правильную команду',
-    description: `В AralHub формирование команды основывается на навыках и интересах участников.
-    Каждый участник берет на себя роль, которая соответствует его сильным сторонам.`,
+    description: `В AralHub команда формируется по навыкам и интересам, роли распределяются по сильным сторонам.`,
     id: 2,
   },
   {
     title: 'Планирование спринта',
-    description: `В AralHub спринт планируется с учетом приоритетов задач и сроков их выполнения.
-    Команда распределяет задачи так, чтобы достичь ключевых целей за отведенное время.`,
+    description: `В AralHub спринт планируется по приоритетам задач и срокам.`,
     id: 3,
   },
   {
     title: 'Проектирование архитектуры',
-    description: `В AralHub архитектура проекта разрабатывается с упором на масштабируемость и надежность.
-    Учитываются используемые технологии, интеграции и структура данных.`,
+    description: `В AralHub архитектура проекта создается с учетом масштабируемости и надежности.`,
     id: 4,
   },
   {
     title: 'Разработка и тестирование',
-    description: `В AralHub разработка ведется итеративно, с регулярной проверкой кода и функциональности.
-    Тестирование проводится автоматизированными и ручными методами для обеспечения качества.`,
+    description: `В AralHub разработка идет итеративно с регулярным тестированием и проверкой кода.`,
     id: 5,
   },
   {
     title: 'Развертывание',
-    description: `В AralHub развертывание проекта осуществляется с использованием современных облачных платформ.
-    Особое внимание уделяется стабильности и доступности приложения для пользователей.`,
+    description: `В AralHub развертывание проводится на облачных платформах с упором на стабильность и доступность.`,
     id: 6,
   },
 ]
@@ -57,7 +51,7 @@ const HowDevelopment = () => {
         span='процесс разработки в AralHub'
         isCenter={true}
       />
-      <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex justify-end sm:justify-between sm:gap-[20px] sm:flex-row md:flex-col '>
+      <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex justify-end sm:justify-between sm:gap-[5px] sm:flex-row md:flex-col '>
         <div className='flex flex-col md:flex-row gap-[30px] pl-[30px]'>
           {cardsInfo.map(
             (item, index) =>
@@ -73,8 +67,8 @@ const HowDevelopment = () => {
           )}
         </div>
         <div className='flex flex-col-reverse md:flex-row h-full mt-[15px] justify-center items-center gap-[20px]'>
-          <div className='md:h-[2px] w-[2px] md:w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
-          <img src={trophy} alt='' className='w-auto' />
+          <div className='h-[550px] md:h-[2px] w-[2px] md:w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
+          <img src={trophy} alt='' className='w-[60px] md:w-auto' />
         </div>
         <div className='flex flex-col items-start md:flex-row md:justify-end gap-[30px] mt-[15px] pr-[30px]'>
           {cardsInfo.map(

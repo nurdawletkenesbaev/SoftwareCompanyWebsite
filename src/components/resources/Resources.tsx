@@ -1,7 +1,10 @@
 import HeadingPage from '../pageComponents/HeadingPage'
-import image2 from '@/images/resource/resource2.png'
-import image3 from '@/images/resource/resource3.png'
-import image4 from '@/images/resource/resource4.png'
+import image2 from '@/images/resource/project1.jpg'
+import image3 from '@/images/resource/project2.jpg'
+import image4 from '@/images/resource/project3.jpg'
+import image1 from '@/images/resource/project1.jpg'
+import image5 from '@/images/resource/project4.jpg'
+import image6 from '@/images/resource/project6.jpg'
 import './resourceScss/Resource.scss'
 
 import 'slick-carousel/slick/slick.css'
@@ -28,12 +31,12 @@ const resourcesInfo: cardInfo[] = [
   },
   {
     title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
-    image: image2,
+    image: image1,
     id: 2,
   },
   {
     title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
-    image: image3,
+    image: image6,
     id: 3,
   },
   {
@@ -45,6 +48,11 @@ const resourcesInfo: cardInfo[] = [
     title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
     image: image2,
     id: 5,
+  },
+  {
+    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    image: image5,
+    id: 6,
   },
 ]
 const Resources: React.FC = () => {
