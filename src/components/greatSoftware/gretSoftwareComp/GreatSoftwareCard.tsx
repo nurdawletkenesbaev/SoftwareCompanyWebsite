@@ -28,7 +28,7 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-[50px] md:gap-[100px] ${
+      className={`flex  md:flex-row gap-[50px] md:gap-[100px] ${
         index % 2 !== 0 && 'flex-row-reverse'
       } items-center`}
     >
@@ -64,7 +64,7 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
         </div>
       </div>
       <div className='w-full md:w-[50%] relative'>
-        <img src={image} alt='' className='w-full' />
+        <img src={image} alt='' className='w-full rounded-md' />
         <img
           src={circles[0]}
           alt=''

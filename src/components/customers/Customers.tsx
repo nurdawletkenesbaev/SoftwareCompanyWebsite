@@ -93,13 +93,9 @@ const Customers = () => {
     ],
   }
   return (
-    <div className='bg-white py-[80px] px-[5%] relative'>
+    <div id='about-us' className='bg-white py-[80px] px-[5%] relative'>
       <div className='col-start-2'>
-        <HeadingPage
-          heading='Почему клиенты любят'
-          span='работать с нами'
-          isCenter={true}
-        />
+        <HeadingPage heading='Наша' span='команда' isCenter={true} />
       </div>
       <div className='grid md:flex justify-between mt-[50px] gap-[50px] items-center'>
         <div className='row-start-2'>
@@ -115,7 +111,10 @@ const Customers = () => {
             <img src={fluentComma1} alt='' className='w-[100px]' />
           </div>
           <p className='text-[14px] md:text-[16px] lg:text-[18px] text-center text-[#718096] leading-7 md:leading-8 lg:leading-9'>
-          Без сомнений, я рекомендую AralHub как одно из лучших агентств по веб-дизайну и цифровому маркетингу. Одно из лучших агентств, с которыми я сталкивался до сих пор. Не буду колебаться, чтобы порекомендовать их работу другим.
+            В нашей команде AralHub работают опытные разработчики, которые
+            профессионально подходят к каждому проекту. Их навыки и знания
+            позволяют нам создавать качественные программные решения,
+            соответствующие современным требованиям и ожиданиям клиентов.
           </p>
           <div className='flex flex-col justify-end'>
             <img src={fluentComma2} alt='' className='w-[100px]' />

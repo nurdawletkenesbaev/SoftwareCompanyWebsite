@@ -40,7 +40,7 @@ const Header = () => {
           <CgMenuRight />
         </button>
         <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
-          <a href='#'>Свяжитесь с нами</a>
+          <a href='#contact-us'>Свяжитесь с нами</a>
         </button>
       </div>
       <div

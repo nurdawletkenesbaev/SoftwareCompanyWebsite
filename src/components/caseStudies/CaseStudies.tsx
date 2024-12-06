@@ -1,4 +1,4 @@
-import img1 from '@/images/caseStudies/caseStudies1.png'
+import img1 from '@/images/caseStudies/case1.jpg'
 import img2 from '@/images/caseStudies/caseStudies2.png'
 import img3 from '@/images/caseStudies/caseStudies3.png'
 import arrow from '@/images/caseStudies/arrow.png'

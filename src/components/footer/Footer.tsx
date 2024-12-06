@@ -1,3 +1,4 @@
+import { FaTelegramPlane } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
@@ -7,7 +8,7 @@ import google from '@/images/images/google.png'
 
 const Footer = () => {
   return (
-    <div>
+    <div id='contact-us'>
       <div className='px-[5%] flex  justify-between flex-wrap gap-[60px] pt-[35px] pb-[80px]'>
         <div className='max-w-[300px]'>
           <Logo />
@@ -57,13 +58,19 @@ const Footer = () => {
               <CgFacebook />
             </button>
             <button className='rounded-full p-[10px] shadow-lg'>
-              <AiOutlineInstagram />
+              <a href='https://www.instagram.com/aralhub.uz/'>
+                <AiOutlineInstagram />
+              </a>
             </button>
             <button className='rounded-full p-[10px] shadow-lg'>
-              <AiOutlineTwitter />
+              <a href='https://t.me//aralhub'>
+                <FaTelegramPlane />
+              </a>
             </button>
             <button className='rounded-full p-[10px] shadow-lg'>
-              <FaLinkedinIn />
+              <a href='#'>
+                <AiOutlineTwitter />
+              </a>
             </button>
           </div>
         </div>

@@ -10,7 +10,7 @@ const CaseStudiesCard: React.FC<Props> = ({ title, description, image }) => {
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 items-center bg-[#F1F2FF] rounded-[30px] border-[1px] border-[#E7DAED]'>
       <div className='h-full'>
-        <img src={image} alt='' className='h-full  w-full' />
+        <img src={image} alt='' className='h-full  w-full object-cover' />
       </div>
       <div className='px-[20px] lg:px-[50px] py-[20px]'>
         <h1 className='text-[28px] text-[#2D3748] font-[600]'>{title}</h1>
