@@ -11,7 +11,7 @@ const RecourseModal: React.FC<props> = ({ image, title, isOpen }) => {
   return (
     <div
       className={`absolute z-[21] top-0 bottom-0 right-0 left-0 ${
-        !isOpen && 'hidden'
+        !isOpen ? 'hidden' : 'hidden'
       }`}
     >
       <div className='absolute z-[22] top-0 bottom-0 right-0 left-0 bg-black backdrop-blur-md opacity-65'></div>

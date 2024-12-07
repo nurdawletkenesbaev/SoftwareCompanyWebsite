@@ -3,7 +3,7 @@ import { ReactTyped } from 'react-typed'
 import './MainScss/Main.scss'
 const Main = () => {
   return (
-    <div className='relative bg-white flex flex-col lg:flex-row text-center lg:text-start px-[5%] items-center min-h-[calc(100vh-60px)] gap-[10px] lg:gap-[30px]'>
+    <div className='relative bg-white flex flex-col lg:flex-row text-center lg:text-start px-[5%] items-center min-h-[calc(100vh-60px)] lg:h-[calc(100vh-60px)] gap-[10px] lg:gap-[30px] lg:max-h-[600px]'>
       <div className='py-[20px] lg:py-0 md:w-[50%] w-full'>
         <span className='text-[35px] md:text-[40px] lg:[45px] font-[300]'>
           Великолепные{' '}

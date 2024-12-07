@@ -66,7 +66,7 @@ const HowDevelopment = () => {
               )
           )}
         </div>
-        <div className='flex flex-col-reverse md:flex-row h-full mt-[15px] justify-center items-center gap-[20px]'>
+        <div className='flex flex-col-reverse md:flex-row h-full justify-center items-center gap-[20px]'>
           <div className='h-[550px] md:h-[2px] w-[2px] md:w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
           <img src={trophy} alt='' className='w-[60px] md:w-auto' />
         </div>
