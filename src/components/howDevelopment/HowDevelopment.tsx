@@ -43,7 +43,7 @@ const cardsInfo: list[] = [
 const HowDevelopment = () => {
   return (
     <div
-      className='px-[5%] pt-[70px] border-t-[1px] border-[#E7DAED] bg-white'
+      className='px-[5%] pt-[70px] border-t-[1px] border-[#E7DAED] bg-[#F9F9F9]'
       id='how-it-works'
     >
       <HeadingPage

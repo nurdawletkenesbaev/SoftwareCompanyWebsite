@@ -1,10 +1,10 @@
-import img1 from '@/images/caseStudies/case1.jpg'
-import img2 from '@/images/caseStudies/caseStudies2.png'
-import img3 from '@/images/caseStudies/caseStudies3.png'
+import img1 from '@/images/caseStudies/web1.jpg'
+import img2 from '@/images/caseStudies/web.jpg'
+import img3 from '@/images/caseStudies/web3.webp'
 import arrow from '@/images/caseStudies/arrow.png'
 import CaseStudiesCard from './caseStudeisComponents/CaseStudiesCard'
 import HeadingPage from '../pageComponents/HeadingPage'
-import ellipse from '@/images/icons/ellipse.png'
+// import ellipse from '@/images/icons/ellipse.png'
 
 interface caseInfo {
   image: string
@@ -38,22 +38,20 @@ const caseStudeisInfo: caseInfo[] = [
 ]
 const CaseStudies = () => {
   return (
-    <div id='case-studies' className='bg-[#F7F7FA] px-[5%] py-[80px] relative'>
-      <div className='hidden md:flex absolute md:top-[60px] lg:top-[100px] left-[25%]'>
-        <img src={ellipse} alt='' />
-      </div>
+    <div id='case-studies' className='bg-white px-[5%] py-[80px] relative'>
       <HeadingPage
         heading='Наши последние'
         span='кейс-исследования'
         isCenter={true}
       />
       <div className='flex flex-col gap-[35px] mt-[80px]'>
-        {caseStudeisInfo.map((item) => (
+        {caseStudeisInfo.map((item, index) => (
           <CaseStudiesCard
             key={item.id}
             title={item.title}
             image={item.image}
             description={item.description}
+            index={index}
           />
         ))}
       </div>

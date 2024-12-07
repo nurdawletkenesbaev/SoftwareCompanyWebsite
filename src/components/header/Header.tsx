@@ -8,7 +8,10 @@ const Header = () => {
   const dispatch = useDispatch()
   const { openMenu } = useSelector((state: RootState) => state.pageActions)
   return (
-    <div className='h-[60px] flex justify-between items-center px-[3%] shadow-lg'>
+    <div
+      id='top'
+      className='h-[60px] flex justify-between items-center px-[3%] bg-white'
+    >
       <div>
         <Logo />
       </div>
@@ -34,12 +37,12 @@ const Header = () => {
       </ul>
       <div className='flex items-center gap-[15px]'>
         <button
-          className='text-[22px] font-bold md:hidden'
+          className='text-[22px] font-bold lg:hidden'
           onClick={() => dispatch(toggleMenu(true))}
         >
           <CgMenuRight />
         </button>
-        <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
+        <button className='hidden lg:flex bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
           <a href='#contact-us'>Свяжитесь с нами</a>
         </button>
       </div>
@@ -105,6 +108,11 @@ const Header = () => {
               Нанять
             </a>
           </li>
+          <div>
+            <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
+              <a href='#contact-us'>Свяжитесь с нами</a>
+            </button>
+          </div>
         </ul>
       </div>
     </div>

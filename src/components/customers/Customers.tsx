@@ -3,8 +3,8 @@ import HeadingPage from '../pageComponents/HeadingPage'
 import fluentComma1 from '@/images/customers/fluentComma1.png'
 import fluentComma2 from '@/images/customers/fluentComma2.png'
 import image from '@/images/images/customer.png'
-import arrow1 from '@/images/customers/arrow1.png'
-import arrow2 from '@/images/customers/arrow2.png'
+// import arrow1 from '@/images/customers/arrow1.png'
+// import arrow2 from '@/images/customers/arrow2.png'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -93,7 +93,10 @@ const Customers = () => {
     ],
   }
   return (
-    <div id='about-us' className='bg-white py-[80px] px-[5%] relative'>
+    <div
+      id='about-us'
+      className='border-b-[1px] border-gray-300 pt-[80px] px-[5%] relative'
+    >
       <div className='col-start-2'>
         <HeadingPage heading='Наша' span='команда' isCenter={true} />
       </div>
@@ -141,7 +144,7 @@ const Customers = () => {
           ))}
         </Slider>
       </div>
-      <div className='hidden md:flex md:absolute md:bottom-[-80px] lg:bottom-[-100px] z-[10]'>
+      {/* <div className='hidden md:flex md:absolute md:bottom-[-80px] lg:bottom-[-100px] z-[10]'>
         <img
           src={arrow1}
           alt=''
@@ -154,7 +157,7 @@ const Customers = () => {
           alt=''
           className='w-[160px] md:w-[180px] lg:w-[200px] h-[170px] md:h-[200px]'
         />
-      </div>
+      </div> */}
     </div>
   )
 }

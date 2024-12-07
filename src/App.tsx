@@ -12,10 +12,12 @@ import TechStack from './components/techStack/TechStack'
 import Brands from './components/brands/Brands'
 import Customers from './components/customers/Customers'
 import DevelopSoftware from './components/developSoftware/DevelopSoftware'
+import './App.css'
+import Top from './components/top/Top'
 
 const App = () => {
   return (
-    <div className='bg-transparent'>
+    <div className='max-w-[1400px] m-auto relative'>
       <Header />
       <Main />
       <Services />
@@ -30,6 +32,7 @@ const App = () => {
       <Resources />
       <HireTopDev />
       <Footer />
+      <Top />
     </div>
   )
 }

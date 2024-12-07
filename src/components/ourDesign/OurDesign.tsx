@@ -82,7 +82,7 @@ const OurDesign = () => {
         {cardsInformation.map((item) => (
           <div
             key={item.title}
-            className='flex gap-[20px] bg-[#FAFAFA]  px-[25px] lg:px-[33px] py-[30px] lg:p-[40px] items-start'
+            className='flex gap-[20px] bg-white rounded-lg shadow-lg  px-[25px] lg:px-[33px] py-[30px] lg:p-[40px] items-start'
           >
             <div>
               <div

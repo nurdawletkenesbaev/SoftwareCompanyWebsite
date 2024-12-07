@@ -87,7 +87,7 @@ const softwareInfo: softwareInformation[] = [
 
 const GreatSoftWare = () => {
   return (
-    <div className='px-[5%] py-[80px]'>
+    <div className='px-[5%] py-[50px] bg-[#F9F9F9]'>
       <HeadingPage
         heading='Способ создания'
         span='отличного программного обеспечения'

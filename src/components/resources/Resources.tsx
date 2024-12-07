@@ -1,10 +1,10 @@
 import HeadingPage from '../pageComponents/HeadingPage'
-import image2 from '@/images/resource/project1.jpg'
-import image3 from '@/images/resource/project2.jpg'
-import image4 from '@/images/resource/project3.jpg'
-import image1 from '@/images/resource/project1.jpg'
-import image5 from '@/images/resource/project4.jpg'
-import image6 from '@/images/resource/project6.jpg'
+import image2 from '@/images/resource/recourse1.jpg'
+import image3 from '@/images/resource/recourse2.jpg'
+import image4 from '@/images/resource/recourse3.jpg'
+import image1 from '@/images/resource/recourse1.jpg'
+import image5 from '@/images/resource/recourse4.jpg'
+import image6 from '@/images/resource/recourse6.jpg'
 import './resourceScss/Resource.scss'
 
 import 'slick-carousel/slick/slick.css'
@@ -17,6 +17,9 @@ import { Grid } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/grid'
 import 'swiper/css/pagination'
+import RecourseModal from './resourceComponents/RecourseModal'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/store/store'
 
 interface cardInfo {
   image: string
@@ -56,10 +59,12 @@ const resourcesInfo: cardInfo[] = [
   },
 ]
 const Resources: React.FC = () => {
+  const { recourseModalImage, recourseModalTitle, recourseOpenModal } =
+    useSelector((state: RootState) => state.pageActions)
   return (
-    <div className='bg-white py-[90px]'>
+    <div className='bg-[#F9F9F9] py-[90px]'>
       <HeadingPage heading='Избранные' span='ресурсы' isCenter={true} />
-      <div className='slider-container mt-[60px]'>
+      <div className='slider-container mt-[60px] '>
         <Swiper
           loop={true}
           slidesPerView={1}
@@ -99,6 +104,11 @@ const Resources: React.FC = () => {
           ))}
         </Swiper>
       </div>
+      <RecourseModal
+        image={recourseModalImage}
+        title={recourseModalTitle}
+        isOpen={recourseOpenModal}
+      />
     </div>
   )
 }

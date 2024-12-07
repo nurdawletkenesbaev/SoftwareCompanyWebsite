@@ -30,9 +30,9 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
     <div
       className={`flex flex-col md:flex-row gap-[50px] md:gap-[100px] ${
         index % 2 !== 0 && 'md:flex-row-reverse'
-      } items-center`}
+      } items-center bg-white rounded-md shadow-md`}
     >
-      <div className='w-full md:w-[50%]'>
+      <div className='w-full md:w-[50%] md:p-[20px]'>
         <h1 className='text-[24px] md:text-[26px] lg:text-[28px] font-[600]'>
           {title}
         </h1>

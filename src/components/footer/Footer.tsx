@@ -53,20 +53,20 @@ const Footer = () => {
         </div>
         <div className='flex flex-col items-end justify-end'>
           <div className='flex gap-[10px]'>
-            <button className='rounded-full p-[10px] shadow-lg'>
+            <button className='rounded-full p-[10px] shadow-lg border-[1px] border-gray-300 hover:scale-105 active:shadow-sm active:scale-95 duration-150'>
               <CgFacebook />
             </button>
-            <button className='rounded-full p-[10px] shadow-lg'>
+            <button className='rounded-full p-[10px] shadow-lg border-[1px] border-gray-300 hover:scale-105 active:shadow-sm active:scale-95 duration-150'>
               <a href='https://www.instagram.com/aralhub.uz/'>
                 <AiOutlineInstagram />
               </a>
             </button>
-            <button className='rounded-full p-[10px] shadow-lg'>
+            <button className='rounded-full p-[10px] shadow-lg border-[1px] border-gray-300 hover:scale-105 active:shadow-sm active:scale-95 duration-150'>
               <a href='https://t.me//aralhub'>
                 <FaTelegramPlane />
               </a>
             </button>
-            <button className='rounded-full p-[10px] shadow-lg'>
+            <button className='rounded-full p-[10px] shadow-lg border-[1px] border-gray-300 hover:scale-105 active:shadow-sm active:scale-95 duration-150'>
               <a href='#'>
                 <AiOutlineTwitter />
               </a>

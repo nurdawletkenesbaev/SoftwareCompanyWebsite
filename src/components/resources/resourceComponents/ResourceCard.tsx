@@ -1,14 +1,30 @@
 import { BsArrowRight } from 'react-icons/bs'
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import {
+  selectRecourseModalImage,
+  selectRecourseModalTitle,
+  toggleRecourseOpenModal,
+} from '@/store/slices/pageActionSlice'
+// import { RootState } from '@/store/store'
 
 interface props {
   image: string
   title: string
 }
 const ResourceCard: React.FC<props> = ({ title, image }) => {
+  const dispatch = useDispatch()
+  // const {recourseOpenModal} = useSelector((state:RootState) => state.pageActions)
   return (
-    <div className='flex flex-col  shadow-md rounded-md'>
-      <div className='h-[180px] overflow-hidden rounded-md border-gray-200 border-[1px] '>
+    <div className='flex flex-col  shadow-md rounded-md bg-white'>
+      <div
+        onClick={() => {
+          dispatch(selectRecourseModalImage(image)),
+            dispatch(selectRecourseModalTitle(title)),
+            dispatch(toggleRecourseOpenModal())
+        }}
+        className='h-[180px] overflow-hidden rounded-md border-gray-200 border-[1px] '
+      >
         <img
           src={image}
           alt=''

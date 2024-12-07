@@ -74,7 +74,7 @@ const Brands = () => {
         </div>
       </div>
 
-      <div className='bg-[#F7F7FA] py-[20px] md:py-[30px] lg:py-[40px] mt-[20px] relative'>
+      <div className='bg-[#F7F7FA] py-[20px] md:py-[30px] lg:py-[30px] mt-[20px] relative'>
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           loop={true}
@@ -96,7 +96,7 @@ const Brands = () => {
         >
           {brandsList.map((item) => (
             <SwiperSlide key={item.id}>
-              <img src={item.image} alt='' />
+              <img src={item.image} alt='' className='max-w-[130px]' />
             </SwiperSlide>
           ))}
         </Swiper>

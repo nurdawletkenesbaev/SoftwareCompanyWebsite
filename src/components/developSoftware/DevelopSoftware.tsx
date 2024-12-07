@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 
 const DevelopSoftware = () => {
   return (
-    <div className='px-[5%] flex flex-col md:flex-row gap-[50px] py-[80px] items-center'>
+    <div className='px-[5%] bg-white flex flex-col md:flex-row gap-[50px] py-[80px] items-center'>
       <div className='w-full md:w-[50%]'>
         <HeadingPage
           isCenter={false}

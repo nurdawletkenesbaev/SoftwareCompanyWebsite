@@ -18,9 +18,9 @@ const HowDevelopmentCard: React.FC<props> = ({
         isTop
           ? 'md:flex-col justify-end'
           : 'md:flex-col-reverse flex-row-reverse justify-start'
-      } items-center`}
+      } items-center pb-[40px]`}
     >
-      <div className='border-[1px]  rounded-[9px] border-[#E7DAED] px-[7px] py-[10px] md:px-[25px] md:py-[20px]'>
+      <div className='border-[1px] bg-white shadow-md  rounded-[9px] border-[#E7DAED] px-[7px] py-[10px] md:px-[25px] md:py-[20px]'>
         <h1 className='text-[13px] md:text-[16px] lg:text-[18px] text-[#1A202C] font-bold mb-[15px]'>
           <span className='bg-gradient-to-r from-[#F76680] to-[#57007B] inline-block text-transparent bg-clip-text'>
             #{index + 1}
