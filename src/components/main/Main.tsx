@@ -1,9 +1,15 @@
 import mainImg from '@/images/images/mainImg.png'
 import { ReactTyped } from 'react-typed'
 import './MainScss/Main.scss'
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleMainOpenModal } from '@/store/slices/pageActionSlice'
+import MainModal from './mainComponents/MainModal'
+import { RootState } from '@/store/store'
 const Main = () => {
+  const dispatch = useDispatch()
+  const {mainOpenModal} = useSelector((state: RootState) => state.pageActions)
   return (
-    <div className='relative bg-white flex flex-col lg:flex-row text-center lg:text-start px-[5%] items-center min-h-[calc(100vh-60px)] lg:h-[calc(100vh-60px)] gap-[10px] lg:gap-[30px] lg:max-h-[600px]'>
+    <div className=' bg-white flex flex-col lg:flex-row text-center lg:text-start px-[5%] items-center min-h-[calc(100vh-60px)] lg:h-[calc(100vh-60px)] gap-[10px] lg:gap-[30px] lg:max-h-[600px]'>
       <div className='py-[20px] lg:py-0 md:w-[50%] w-full'>
         <span className='text-[35px] md:text-[40px] lg:[45px] font-[300]'>
           Великолепные{' '}
@@ -27,7 +33,7 @@ const Main = () => {
           класса, чтобы воплотить вашу идею в реальность.
         </p>
         <div className='mt-[35px]'>
-          <button className='text-[#FAFAFA] font-[600] text-[14px] px-[20px] md:px-[25px] lg:px-[30px] py-[15px] md:py-[17px] lg:py-[19px] bg-[#3D63EA] rounded-md  hover:scale-105 active:scale-95 duration-300 shadow-lg'>
+          <button onClick={() => dispatch(toggleMainOpenModal(true))} className='text-[#FAFAFA] font-[600] text-[14px] px-[20px] md:px-[25px] lg:px-[30px] py-[15px] md:py-[17px] lg:py-[19px] bg-[#3D63EA] rounded-md  hover:scale-105 active:scale-95 duration-300 shadow-lg'>
             Давайте начнем!
           </button>
         </div>
@@ -35,6 +41,7 @@ const Main = () => {
       <div className='md:w-[50%] w-full'>
         <img src={mainImg} alt='' className='w-full h-full animate-bounce' />
       </div>
+      <MainModal isOpen={mainOpenModal}/>
     </div>
   )
 }

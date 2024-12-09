@@ -6,6 +6,7 @@ interface pageAction {
   recourseModalImage: string
   recourseModalTitle: string
   recourseOpenModal: boolean
+  mainOpenModal: boolean
 }
 
 const initialState: pageAction = {
@@ -14,6 +15,7 @@ const initialState: pageAction = {
   recourseModalImage: '',
   recourseModalTitle: '',
   recourseOpenModal: false,
+  mainOpenModal: false
 }
 
 const pageActionSlice = createSlice({
@@ -35,6 +37,9 @@ const pageActionSlice = createSlice({
     toggleRecourseOpenModal: (state, action) => {
       state.recourseOpenModal = action.payload
     },
+    toggleMainOpenModal: (state, action) => {
+      state.mainOpenModal = action.payload
+    },
   },
 })
 export const {
@@ -43,5 +48,6 @@ export const {
   selectRecourseModalImage,
   selectRecourseModalTitle,
   toggleRecourseOpenModal,
+  toggleMainOpenModal
 } = pageActionSlice.actions
 export default pageActionSlice.reducer
