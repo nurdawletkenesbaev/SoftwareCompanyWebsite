@@ -17,7 +17,7 @@ import Top from './components/top/Top'
 
 const App = () => {
   return (
-    <div className='max-w-[1400px] m-auto max-h-[100vh] min-h-[100vh] overflow-y-scroll'>
+    <div className='max-w-[1600px] m-auto max-h-[100vh] min-h-[100vh] overflow-y-scroll overflow-x-hidden'>
       <Header />
       <Main />
       <Services />

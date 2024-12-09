@@ -93,7 +93,7 @@ const TechStack = () => {
   return (
     <div className='px-[5%] py-[80px] bg-white'>
       <HeadingPage heading='Наши' span='Технологии' isCenter={true} />
-      <div className='flex gap-[30px] justify-center mt-[30px] mb-[60px] overflow-x-auto'>
+      <div className='flex gap-[30px] justify-center mt-[30px] mb-[60px] pl-[200px] pr-[10px] overflow-x-scroll'>
         {techStack.map((item) => (
           <div
             onClick={() => dispatch(changeActiveTechStack(item.id))}

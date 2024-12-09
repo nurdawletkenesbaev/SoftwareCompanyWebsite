@@ -32,7 +32,7 @@ const HowDevelopmentCard: React.FC<props> = ({
           {description}
         </p>
       </div>
-      <div className='h-[2px] md:h-[40px] w-[40px] md:w-[2px] bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
+      <div className='h-[2px] md:h-[40px] w-[10px] md:w-[2px] bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
     </div>
   )
 }

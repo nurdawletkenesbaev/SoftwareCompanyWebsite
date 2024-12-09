@@ -51,7 +51,7 @@ const HowDevelopment = () => {
         span='процесс разработки в AralHub'
         isCenter={true}
       />
-      <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex justify-end sm:justify-between sm:gap-[5px] sm:flex-row md:flex-col '>
+      <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex justify-center sm:justify-between sm:gap-[5px] sm:flex-row md:flex-col '>
         <div className='flex flex-col md:flex-row gap-[30px] pl-[30px]'>
           {cardsInfo.map(
             (item, index) =>
