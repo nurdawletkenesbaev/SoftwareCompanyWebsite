@@ -12,7 +12,7 @@ const DevelopSoftware = () => {
           heading='Ведущие компании доверяют нам'
           span='разработку программного обеспечения.'
         />
-        <p className='text-[#718096] font-[400] text-[14px] md:text-[16px] lg:text-[18px] leading-7 md:leading-8  lg:leading-9 my-[20px] md:my-[25px] lg:my-[30px]'>
+        <p className='text-gray-700 font-[400] text-[14px] md:text-[16px] lg:text-[18px] leading-7 md:leading-8  lg:leading-9 my-[20px] md:my-[25px] lg:my-[30px]'>
           Мы{' '}
           <span className='bg-gradient-to-r from-[#F76680] to-[#57007B] inline-block text-transparent bg-clip-text'>
             увеличиваем возможности разработки

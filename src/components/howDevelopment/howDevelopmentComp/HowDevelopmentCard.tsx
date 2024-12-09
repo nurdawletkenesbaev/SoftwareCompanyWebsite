@@ -28,7 +28,7 @@ const HowDevelopmentCard: React.FC<props> = ({
           {'  '}
           {title}
         </h1>
-        <p className='text-[#718096] text-[11px] md:text-[13px] lg:text-[14px]'>
+        <p className='text-gray-700 text-[11px] md:text-[13px] lg:text-[14px]'>
           {description}
         </p>
       </div>

@@ -1,12 +1,12 @@
 import { BsArrowRight } from 'react-icons/bs'
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import {
   selectRecourseModalImage,
   selectRecourseModalTitle,
   toggleRecourseOpenModal,
 } from '@/store/slices/pageActionSlice'
-// import { RootState } from '@/store/store'
+import { RootState } from '@/store/store'
 
 interface props {
   image: string
@@ -14,21 +14,24 @@ interface props {
 }
 const ResourceCard: React.FC<props> = ({ title, image }) => {
   const dispatch = useDispatch()
-  // const {recourseOpenModal} = useSelector((state:RootState) => state.pageActions)
+  const { recourseOpenModal } = useSelector(
+    (state: RootState) => state.pageActions
+  )
   return (
     <div className='flex flex-col  shadow-md rounded-md bg-white'>
       <div
         onClick={() => {
           dispatch(selectRecourseModalImage(image)),
             dispatch(selectRecourseModalTitle(title)),
-            dispatch(toggleRecourseOpenModal())
+            dispatch(toggleRecourseOpenModal(true)),
+            console.log(recourseOpenModal)
         }}
-        className='h-[180px] overflow-hidden rounded-md border-gray-200 border-[1px] '
+        className='h-[180px] overflow-hidden rounded-md border-gray-200 border-[1px] p-[5px]'
       >
         <img
           src={image}
           alt=''
-          className='rounded-md h-full scale-110 object-contain hover:scale-100 duration-200 cursor-pointer'
+          className='rounded-md h-full  object-contain hover:scale-110 duration-200 cursor-pointer'
         />
       </div>
       <p className='my-[20px] text-start px-[10px]'>{title}</p>

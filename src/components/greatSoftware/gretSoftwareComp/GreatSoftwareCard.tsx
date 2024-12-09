@@ -4,7 +4,6 @@ interface softwareInformation {
   image: string
   title: string
   description: string
-  mainP: string
   content: string
   author: {
     authorImage: string
@@ -19,7 +18,6 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
   image,
   title,
   description,
-  mainP,
   content,
   author,
   circles,
@@ -32,7 +30,7 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
         index % 2 !== 0 && 'md:flex-row-reverse'
       } items-center bg-white rounded-md shadow-md`}
     >
-      <div className='w-full md:w-[50%] md:p-[20px]'>
+      <div className='w-full md:w-[50%] p-[10px] md:p-[20px]'>
         <h1 className='text-[24px] md:text-[26px] lg:text-[28px] font-[600]'>
           {title}
         </h1>
@@ -40,12 +38,6 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
           <p className='text-[14px] md:text-[16px] lg:text-[18px]'>
             {description}
           </p>
-          <p
-            className='text-[14px] md:text-[16px] lg:text-[18px]'
-            dangerouslySetInnerHTML={{
-              __html: mainP,
-            }}
-          ></p>
           <div className='flex gap-[10px]'>
             <div className='w-[5px] rounded-sm bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
             <div className='bg-gradient-to-r from-[#F76680] py-[10px] to-[#57007B] inline-block text-transparent bg-clip-text'>
@@ -54,8 +46,12 @@ const GreatSoftwareCard: React.FC<softwareInformation> = ({
           </div>
         </div>
         <div className='flex gap-[10px] items-center'>
-          <div>
-            <img src={author.authorImage} alt='' />
+          <div className='w-[50px] h-[50px] rounded-full'>
+            <img
+              src={author.authorImage}
+              alt=''
+              className='w-full h-full rounded-full object-cover'
+            />
           </div>
           <div>
             <p>{author.authorName}</p>

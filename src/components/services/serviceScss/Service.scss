@@ -1,5 +1,5 @@
 .slick-slide {
-  opacity: 0.5 !important;
+  opacity: 0.4 !important;
 }
 .slick-center.slick-center {
   opacity: 1 !important;
@@ -14,10 +14,9 @@
 }
 
 .slick-dots li button {
-  width: 12px;
-  height: 12px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  //   background-color: #ccc;
   border: 1px solid gray;
   transition: all 0.3s ease;
 }
@@ -25,11 +24,10 @@
 .slick-dots li button::before {
   content: '';
 }
-/* Faol dot uchun rang */
+
 .slick-dots li.slick-active button {
   background: linear-gradient(90deg, #f76680, #57007b);
   box-shadow: 0 0 5px #57007b;
   border: none;
-  //   background-color: #ff6b6b; /* Faol rang */
-  transform: scale(1.2); /* Katta ko‘rinish */
+  transform: scale(1.2);
 }

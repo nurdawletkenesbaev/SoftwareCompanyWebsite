@@ -11,15 +11,15 @@ const Footer = () => {
       <div className='px-[5%] flex  justify-between flex-wrap gap-[60px] pt-[35px] pb-[80px]'>
         <div className='max-w-[300px]'>
           <Logo />
-          <p className='text-[18px] text-[#718096] font-[400] my-[20px]'>
+          <p className='text-[18px] text-gray-700 font-[400] my-[20px]'>
             Достигайте успеха с инновационными решениями и качественным
             дизайном.
           </p>
           <img src={google} alt='' />
         </div>
         <div>
-          <span className='text-[#4A5568] text-[18px] font-bold'>Ссылки</span>
-          <ul className='mt-[20px] text-[16px] text-[#718096]'>
+          <span className='text-gray-900 text-[18px] font-bold'>Ссылки</span>
+          <ul className='mt-[20px] text-[16px] text-gray-700 '>
             <li className='py-[5px]'>
               <a href='#'>О нас</a>
             </li>
@@ -43,8 +43,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='text-[18px] text-[#718096] max-w-[300px]'>
-          <span className='text-[#4A5568] text-[18px] font-bold'>Контакты</span>
+        <div className='text-[18px] text-gray-700  max-w-[300px]'>
+          <span className='text-gray-900 text-[18px] font-bold'>Контакты</span>
           <p className='my-[20px]'>
             Свяжитесь с нами для обсуждения вашего проекта и получения
             консультации.{' '}

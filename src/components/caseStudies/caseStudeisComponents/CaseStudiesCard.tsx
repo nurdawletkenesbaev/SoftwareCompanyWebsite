@@ -19,14 +19,18 @@ const CaseStudiesCard: React.FC<Props> = ({
         index % 2 === 0 && ''
       }`}
     >
-      <div className='h-full'>
+      <div className={`h-full ${index % 2 == 1 ? 'md:order-2' : ''}`}>
         <img
           src={image}
           alt=''
           className='h-full rounded-[30px] w-full object-cover'
         />
       </div>
-      <div className='px-[20px] lg:px-[50px] py-[20px]'>
+      <div
+        className={`px-[20px] lg:px-[50px] py-[20px] ${
+          index % 2 == 1 ? 'md:order-1' : ''
+        }`}
+      >
         <h1 className='text-[28px] text-[#2D3748] font-[600]'>{title}</h1>
         <p className='leading-7 text-[14px] text-[#4A5568] font-[400] mt-[20px] md:mt-[25px] lg:mt-[30px] mb-[30px] md:mb-[35px] lg:mb-[50px]'>
           {description}

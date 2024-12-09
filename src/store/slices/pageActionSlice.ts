@@ -32,8 +32,8 @@ const pageActionSlice = createSlice({
     selectRecourseModalTitle: (state, action) => {
       state.recourseModalTitle = action.payload
     },
-    toggleRecourseOpenModal: (state) => {
-      state.recourseOpenModal = !state.recourseOpenModal
+    toggleRecourseOpenModal: (state, action) => {
+      state.recourseOpenModal = action.payload
     },
   },
 })
@@ -42,6 +42,6 @@ export const {
   toggleMenu,
   selectRecourseModalImage,
   selectRecourseModalTitle,
-  toggleRecourseOpenModal
+  toggleRecourseOpenModal,
 } = pageActionSlice.actions
 export default pageActionSlice.reducer

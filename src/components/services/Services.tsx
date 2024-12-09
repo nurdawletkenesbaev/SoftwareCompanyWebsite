@@ -95,7 +95,7 @@ const Services = () => {
       },
     ],
   }
-  
+
   return (
     <div className='bg-[#F9F9F9] py-[50px]' id='services'>
       <h1 className='text-[28px] md:text-[31px] lg:text-[35px] font-bold text-center text-[#1A202C]'>

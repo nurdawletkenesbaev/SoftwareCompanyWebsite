@@ -15,7 +15,7 @@ const Header = () => {
       <div>
         <Logo />
       </div>
-      <ul className='hidden lg:flex gap-[40px] text-[16px] text-[#4A5568]'>
+      <ul className='hidden lg:flex gap-[40px] text-[16px] text-gray-700 font-semibold'>
         <li>
           <a href='#about-us'>О нас</a>
         </li>
@@ -47,11 +47,11 @@ const Header = () => {
         </button>
       </div>
       <div
-        className={`w-full h-max absolute z-[10] bg-black backdrop-blur-lg opacity-85 text-white left-0 right-0 ${
+        className={`w-full h-max absolute z-[10] bg-black backdrop-blur-lg opacity-[0.96] text-white left-0 right-0 ${
           openMenu ? 'top-0 duration-300' : 'top-[-100%] duration-300'
         }`}
       >
-        <ul className='flex flex-col text-[20px] py-[20px] text-center'>
+        <ul className='flex flex-col text-[20px] py-[20px] text-center font-semibold'>
           <li className='p-[10px] pr-[20px] flex justify-end text-[25px]'>
             <button
               onClick={() => dispatch(toggleMenu(false))}

@@ -22,7 +22,7 @@ const Main = () => {
             </span>
           </span>
         </span>
-        <p className='text-[#4A5568] text-[14px] md:text-[16px] lg:text-[18px] mt-[10px] md:mt-[15px] lg:mt-[20px]'>
+        <p className='text-gray-700 text-[14px] md:text-[16px] lg:text-[18px] mt-[10px] md:mt-[15px] lg:mt-[20px]'>
           Мы помогаем создавать и управлять командой разработчиков мирового
           класса, чтобы воплотить вашу идею в реальность.
         </p>

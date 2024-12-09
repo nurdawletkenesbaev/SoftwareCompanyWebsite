@@ -6,7 +6,6 @@ import logo3 from '@/images/autoPlay/logo3.png'
 import logo4 from '@/images/autoPlay/logo4.png'
 import logo5 from '@/images/autoPlay/logo5.png'
 import logo6 from '@/images/autoPlay/logo6.png'
-// import circle from '../../images/icons/circle.png'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import HeadingPage from '../pageComponents/HeadingPage'
 import { Autoplay, Navigation } from 'swiper/modules'
@@ -61,13 +60,13 @@ const Brands = () => {
         <div className='flex justify-end gap-[10px]'>
           <button
             onClick={() => swiperRef.current?.slidePrev()}
-            className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
+            className='hover:scale-[1.05] active:scale-[0.97] shadow-xl border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
           >
             <BsArrowLeft />
           </button>
           <button
             onClick={() => swiperRef.current?.slideNext()}
-            className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
+            className='hover:scale-[1.05] active:scale-[0.97] shadow-xl border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
           >
             <BsArrowRight />
           </button>

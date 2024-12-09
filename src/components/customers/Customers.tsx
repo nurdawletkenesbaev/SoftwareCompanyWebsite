@@ -2,9 +2,11 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 import HeadingPage from '../pageComponents/HeadingPage'
 import fluentComma1 from '@/images/customers/fluentComma1.png'
 import fluentComma2 from '@/images/customers/fluentComma2.png'
-import image from '@/images/images/customer.png'
-// import arrow1 from '@/images/customers/arrow1.png'
-// import arrow2 from '@/images/customers/arrow2.png'
+import image1 from '@/images/devs/dev1.jpg'
+import image2 from '@/images/devs/dev2.jpg'
+import image3 from '@/images/devs/dev3.jpg'
+import image4 from '@/images/devs/dev4.jpg'
+import image5 from '@/images/devs/dev5.jpg'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -20,40 +22,40 @@ interface customers {
 }
 const customersList: customers[] = [
   {
-    image: image,
+    image: image1,
     id: 1,
     name: 'Romeena De Silva',
-    work: 'Janet Cosmetics',
+    work: 'Бэкeнд разработчик',
   },
   {
-    image: image,
+    image: image2,
     id: 2,
     name: 'Romeena De Silva',
-    work: 'Janet Cosmetics',
+    work: 'Андроид разработчик',
   },
   {
-    image: image,
+    image: image3,
     id: 3,
     name: 'Imran Khan',
-    work: 'Software Engineer',
+    work: 'Бэкeнд разработчик',
   },
   {
-    image: image,
+    image: image4,
     id: 4,
     name: 'Romeena De Silva',
-    work: 'Janet Cosmetics',
+    work: 'Фронтенд разработчик',
   },
   {
-    image: image,
+    image: image5,
     id: 5,
     name: 'Romeena De Silva',
-    work: 'Janet Cosmetics',
+    work: 'Фронтенд разработчик',
   },
   {
-    image: image,
+    image: image1,
     id: 6,
     name: 'Romeena De Silva',
-    work: 'Janet Cosmetics',
+    work: 'Бэкeнд разработчик',
   },
 ]
 const Customers = () => {
@@ -73,7 +75,7 @@ const Customers = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 868,
         settings: {
           slidesToShow: 3,
         },
@@ -104,7 +106,7 @@ const Customers = () => {
         <div className='row-start-2'>
           <button
             onClick={() => sliderRef.current?.slickPrev()}
-            className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
+            className='hover:scale105 active:scale-[0.97] shadow-xl border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-100'
           >
             <BsArrowLeft />
           </button>
@@ -113,7 +115,7 @@ const Customers = () => {
           <div className='flex flex-col justify-start'>
             <img src={fluentComma1} alt='' className='w-[100px]' />
           </div>
-          <p className='text-[14px] md:text-[16px] lg:text-[18px] text-center text-[#718096] leading-7 md:leading-8 lg:leading-9'>
+          <p className='text-[14px] md:text-[16px] lg:text-[18px] text-center text-gray-700 leading-7 md:leading-8 lg:leading-9'>
             В нашей команде AralHub работают опытные разработчики, которые
             профессионально подходят к каждому проекту. Их навыки и знания
             позволяют нам создавать качественные программные решения,
@@ -126,7 +128,7 @@ const Customers = () => {
         <div className='row-start-2 col-satrt-2 flex justify-end'>
           <button
             onClick={() => sliderRef.current?.slickNext()}
-            className='border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
+            className='hover:scale105 active:scale-[0.97] shadow-xl border-[1px] border-[#57007B] text-[#57007B] p-[10px] rounded-full hover:text-[white] hover:bg-[#57007B] text-[20px] duration-200'
           >
             <BsArrowRight />
           </button>

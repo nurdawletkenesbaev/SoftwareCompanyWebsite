@@ -2,7 +2,7 @@ import HeadingPage from '../pageComponents/HeadingPage'
 import image2 from '@/images/resource/recourse1.jpg'
 import image3 from '@/images/resource/recourse2.jpg'
 import image4 from '@/images/resource/recourse3.jpg'
-import image1 from '@/images/resource/recourse1.jpg'
+import image1 from '@/images/resource/recourse5.jpg'
 import image5 from '@/images/resource/recourse4.jpg'
 import image6 from '@/images/resource/recourse6.jpg'
 import './resourceScss/Resource.scss'
@@ -28,32 +28,32 @@ interface cardInfo {
 }
 const resourcesInfo: cardInfo[] = [
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Въезд на парковку',
     image: image3,
     id: 1,
   },
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Eco Filter',
     image: image1,
     id: 2,
   },
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Анализ',
     image: image6,
     id: 3,
   },
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Face ID',
     image: image4,
     id: 4,
   },
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Control',
     image: image2,
     id: 5,
   },
   {
-    title: 'How to Build a Scalable Application up to 1 Million Users on AWS',
+    title: 'Las Vegas Restaurant',
     image: image5,
     id: 6,
   },

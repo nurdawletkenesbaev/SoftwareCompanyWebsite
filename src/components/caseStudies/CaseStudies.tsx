@@ -4,7 +4,6 @@ import img3 from '@/images/caseStudies/web3.webp'
 import arrow from '@/images/caseStudies/arrow.png'
 import CaseStudiesCard from './caseStudeisComponents/CaseStudiesCard'
 import HeadingPage from '../pageComponents/HeadingPage'
-// import ellipse from '@/images/icons/ellipse.png'
 
 interface caseInfo {
   image: string

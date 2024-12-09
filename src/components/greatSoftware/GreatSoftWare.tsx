@@ -8,16 +8,15 @@ import circle6 from '@/images/greatSoftware/circle6.png'
 import image1 from '@/images/greatSoftware/ourteam1.jpg'
 import image2 from '@/images/greatSoftware/ourteam2.jpg'
 import image3 from '@/images/greatSoftware/ourteam4.jpg'
-import authoImage1 from '@/images/greatSoftware/author1.png'
-import authoImage2 from '@/images/greatSoftware/author2.png'
-import authoImage3 from '@/images/greatSoftware/author3.png'
+import authoImage1 from '@/images/devs/dev1.jpg'
+import authoImage2 from '@/images/devs/dev2.jpg'
+import authoImage3 from '@/images/devs/dev5.jpg'
 import GreatSoftwareCard from './gretSoftwareComp/GreatSoftwareCard'
 
 interface softwareInformation {
   image: string
   title: string
   description: string
-  mainP: string
   content: string
   author: {
     authorImage: string
@@ -31,17 +30,15 @@ interface softwareInformation {
 const softwareInfo: softwareInformation[] = [
   {
     image: image1,
-    title: 'Build the right team to scale',
+    title: 'Развивайте свой бизнес с квалифицированными специалистами',
     description:
-      'Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers',
-    mainP:
-      'Our <span style="background: linear-gradient(#F76680, #57007B); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">delivery model</span> helps you cut costs and deliver within budget.',
+      'Найти идеальные таланты жизненно важно для роста бизнеса. Мы помогаем вам привлекать профессионалов, которые соответствуют вашим целям и требованиям, гарантируя долгосрочный успех.',
     content:
-      '"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"',
+      '"Благодаря их проактивному подходу мы эффективно расширили нашу деятельность, сохранив бюджет."',
     author: {
       authorImage: authoImage1,
-      authorName: 'Jeewa markram',
-      authorWork: 'CEO',
+      authorName: 'Тимур',
+      authorWork: 'Бэкeнд разработчик',
     },
     circles: [circle1, circle2],
     position: ['top-[-25px] left-[-25px]', 'bottom-[-15px] left-[35%]'],
@@ -49,17 +46,15 @@ const softwareInfo: softwareInformation[] = [
   },
   {
     image: image2,
-    title: 'Build the right team to scale',
+    title: 'Оптимизируйте расходы с надежной командой',
     description:
-      'Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers',
-    mainP:
-      'Our <span style="background: linear-gradient(#F76680, #57007B); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">delivery model</span> helps you cut costs and deliver within budget.',
+      'Найти подходящую команду нелегко. Мы упрощаем этот процесс, предоставляя первоклассных специалистов, которые эффективно работают в вашем рабочем процессе и обеспечивают результаты в рамках бюджета.',
     content:
-      '"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"',
+      '"Благодаря их опыту мы смогли сократить расходы и улучшить сроки выполнения."',
     author: {
       authorImage: authoImage2,
-      authorName: 'Jeewa markram',
-      authorWork: 'CEO',
+      authorName: 'Искандер',
+      authorWork: 'Фронтенд разработчик',
     },
     circles: [circle3, circle4],
     position: ['right-[-10px] top-[-10px]', 'bottom-[-35px] left-[15%]'],
@@ -67,17 +62,15 @@ const softwareInfo: softwareInformation[] = [
   },
   {
     image: image3,
-    title: 'Build the right team to scale',
+    title: 'Создавайте команды, которые стимулируют инновации',
     description:
-      'Finding the right talent is not easy. We help you find the talent that suits your needs, follows your processes, and sticks with you long term (not the case with freelancers',
-    mainP:
-      'Our <span style="background: linear-gradient(#F76680, #57007B); -webkit-text-fill-color: transparent; -webkit-background-clip: text;">delivery model</span> helps you cut costs and deliver within budget.',
+      'Сотрудничайте с профессионалами, которые привносят инновации и поднимают ваши проекты на новый уровень. Наши индивидуальные решения обеспечивают качество и долгосрочное сотрудничество для вашего растущего бизнеса.',
     content:
-      '"Simform is quick to identify larger problem with the Software so we decided to expand our scope to build new modules"',
+      '"Их команда быстро адаптировалась к нашим требованиям и привнесла свежие идеи в наш продукт."',
     author: {
       authorImage: authoImage3,
-      authorName: 'Jeewa markram',
-      authorWork: 'CEO',
+      authorName: 'Бектемир',
+      authorWork: 'Бэкeнд разработчик',
     },
     circles: [circle6, circle5],
     position: ['left-[50%] top-[-20px]', 'bottom-[-20px] left-[-20px]'],
@@ -100,7 +93,6 @@ const GreatSoftWare = () => {
             image={item.image}
             title={item.title}
             description={item.description}
-            mainP={item.mainP}
             content={item.content}
             author={item.author}
             circles={item.circles}
