@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <div
       id='top'
-      className='h-[60px] flex justify-between items-center px-[3%] border-b-[1px] border-gray-200 bg-[#F9F9F9]'
+      className='h-[60px] flex justify-between items-center px-[3%] border-b-[1px] border-gray-300 bg-gray-200'
     >
       <div>
         <Logo />
@@ -88,7 +88,10 @@ const Header = () => {
             </li>
           ))}
           <div>
-            <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
+            <button
+              onClick={() => dispatch(toggleMenu(false))}
+              className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'
+            >
               <a href='#contact-us'>Свяжитесь с нами</a>
             </button>
           </div>
