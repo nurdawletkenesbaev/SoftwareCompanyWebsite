@@ -36,15 +36,20 @@ const ResourceCard: React.FC<props> = ({ title, image }) => {
       </div>
       <p className='my-[20px] text-start px-[10px]'>{title}</p>
       <div className='flex justify-end px-[10px] pb-[10px]'>
-        <a
-          href=''
+        <button
+          onClick={() => {
+            dispatch(selectRecourseModalImage(image)),
+              dispatch(selectRecourseModalTitle(title)),
+              dispatch(toggleRecourseOpenModal(true)),
+              console.log(recourseOpenModal)
+          }}
           className='text-[16px] text-[#57007B] flex items-center gap-[10px]'
         >
           Read More{' '}
           <span>
             <BsArrowRight />
           </span>
-        </a>
+        </button>
       </div>
     </div>
   )

@@ -9,8 +9,8 @@ import image1 from '@/images/greatSoftware/ourteam1.jpg'
 import image2 from '@/images/greatSoftware/ourteam2.jpg'
 import image3 from '@/images/greatSoftware/ourteam4.jpg'
 import authoImage1 from '@/images/devs/dev1.jpg'
-import authoImage2 from '@/images/devs/dev2.jpg'
-import authoImage3 from '@/images/devs/dev5.jpg'
+import authoImage2 from '@/images/devs/dev5.jpg'
+import authoImage3 from '@/images/devs/dev3.jpg'
 import GreatSoftwareCard from './gretSoftwareComp/GreatSoftwareCard'
 
 interface softwareInformation {

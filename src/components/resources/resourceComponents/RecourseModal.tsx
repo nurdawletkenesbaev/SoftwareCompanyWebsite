@@ -16,9 +16,9 @@ const RecourseModal: React.FC<props> = ({ image, title, isOpen }) => {
     >
       <div
         onClick={() => dispatch(toggleRecourseOpenModal(false))}
-        className='absolute z-[22] top-0 bottom-0 right-0 left-0 bg-black backdrop-blur-md opacity-65'
+        className='absolute items-center z-[22] top-0 bottom-0 right-0 left-0 bg-black backdrop-blur-md opacity-65'
       ></div>
-      <div className='absolute z-[23] bottom-[5%] top-[5%] right-[3%] left-[3%] flex flex-col items-center py-[20px] justify=-center bg-white rounded-xl'>
+      <div className='absolute z-[23] h-max translate-y-[-50%] top-[50%] right-[3%] left-[3%] flex flex-col items-center py-[20px] justify=-center bg-white rounded-xl'>
         <div className='flex w-full justify-end pr-[5%] mb-[15px]'>
           <span
             onClick={() => dispatch(toggleRecourseOpenModal(false))}

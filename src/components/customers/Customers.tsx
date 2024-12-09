@@ -24,19 +24,19 @@ const customersList: customers[] = [
   {
     image: image1,
     id: 1,
-    name: 'Romeena De Silva',
+    name: 'Тимур',
     work: 'Бэкeнд разработчик',
   },
   {
     image: image2,
     id: 2,
-    name: 'Romeena De Silva',
+    name: 'Акмал',
     work: 'Андроид разработчик',
   },
   {
     image: image3,
     id: 3,
-    name: 'Imran Khan',
+    name: 'Бектемир',
     work: 'Бэкeнд разработчик',
   },
   {
@@ -48,13 +48,14 @@ const customersList: customers[] = [
   {
     image: image5,
     id: 5,
-    name: 'Romeena De Silva',
+    name: 'Искандер',
     work: 'Фронтенд разработчик',
+   
   },
   {
     image: image1,
     id: 6,
-    name: 'Romeena De Silva',
+    name: 'Самандар',
     work: 'Бэкeнд разработчик',
   },
 ]
