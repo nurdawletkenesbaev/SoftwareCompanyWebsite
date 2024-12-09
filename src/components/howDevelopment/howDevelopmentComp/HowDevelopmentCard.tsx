@@ -14,7 +14,7 @@ const HowDevelopmentCard: React.FC<props> = ({
 }) => {
   return (
     <div
-      className={`md:w-[28%] flex md:flex ${
+      className={`md:w-[28%] text-center flex md:flex ${
         isTop
           ? 'md:flex-col justify-end'
           : 'md:flex-col-reverse flex-row-reverse justify-start'

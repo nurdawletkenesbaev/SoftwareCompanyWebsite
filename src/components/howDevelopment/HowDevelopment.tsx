@@ -52,7 +52,7 @@ const HowDevelopment = () => {
         isCenter={true}
       />
       <div className='mt-[50px] md:mt-[65px] lg:mt-[80px] flex justify-center sm:justify-between sm:gap-[5px] sm:flex-row md:flex-col '>
-        <div className='flex flex-col md:flex-row gap-[30px] pl-[30px]'>
+        <div className='flex flex-col md:flex-row gap-[30px] pl-[10px]'>
           {cardsInfo.map(
             (item, index) =>
               index <= 2 && (
@@ -70,7 +70,7 @@ const HowDevelopment = () => {
           <div className='h-[550px] md:h-[2px] w-[2px] md:w-full bg-[linear-gradient(90deg,_#F76680,_#57007B)]'></div>
           <img src={trophy} alt='' className='w-[60px] md:w-auto' />
         </div>
-        <div className='flex flex-col items-start md:flex-row md:justify-end gap-[30px] mt-[15px] pr-[30px]'>
+        <div className='flex flex-col items-start md:flex-row md:justify-end gap-[30px] mt-[15px] pr-[10px]'>
           {cardsInfo.map(
             (item, index) =>
               index > 2 && (

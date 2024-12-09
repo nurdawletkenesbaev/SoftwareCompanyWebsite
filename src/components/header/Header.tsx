@@ -4,6 +4,36 @@ import Logo from './headerComponents/Logo'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store/store'
 import { toggleMenu } from '@/store/slices/pageActionSlice'
+interface menuInterface {
+  title: string
+  id: string
+}
+const menu: menuInterface[] = [
+  {
+    title: 'О нас',
+    id: '#about-us',
+  },
+  {
+    title: 'Услуги',
+    id: '#services',
+  },
+  {
+    title: 'Кейсы',
+    id: '#case-studies',
+  },
+  {
+    title: 'Блог',
+    id: '#blog',
+  },
+  {
+    title: 'Как это работает',
+    id: '#how-it-works',
+  },
+  {
+    title: 'Нанять',
+    id: '#hire',
+  },
+]
 const Header = () => {
   const dispatch = useDispatch()
   const { openMenu } = useSelector((state: RootState) => state.pageActions)
@@ -16,24 +46,11 @@ const Header = () => {
         <Logo />
       </div>
       <ul className='hidden lg:flex gap-[40px] text-[16px] text-gray-700 font-semibold'>
-        <li>
-          <a href='#about-us'>О нас</a>
-        </li>
-        <li>
-          <a href='#services'>Услуги</a>
-        </li>
-        <li>
-          <a href='#case-studies'>Кейсы</a>
-        </li>
-        <li>
-          <a href='#blog'>Блог</a>
-        </li>
-        <li>
-          <a href='#how-it-works'>Как это работает</a>
-        </li>
-        <li>
-          <a href='#hire'>Нанять</a>
-        </li>
+        {menu.map((item) => (
+          <li key={item.id}>
+            <a href={item.id}>{item.title}</a>
+          </li>
+        ))}
       </ul>
       <div className='flex items-center gap-[15px]'>
         <button
@@ -60,54 +77,16 @@ const Header = () => {
               <IoMdClose />
             </button>
           </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#about-us'
-            >
-              О нас
-            </a>
-          </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#services'
-            >
-              Услуги
-            </a>
-          </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#case-studies'
-            >
-              Кейсы
-            </a>
-          </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#blog'
-            >
-              Блог
-            </a>
-          </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#how-it-works'
-            >
-              Как это работает
-            </a>
-          </li>
-          <li className=''>
-            <a
-              className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
-              href='#hire'
-            >
-              Нанять
-            </a>
-          </li>
+          {menu.map((item) => (
+            <li key={item.id} onClick={() => dispatch(toggleMenu(false))}>
+              <a
+                className='cursor-pointer w-full hover:bg-gray-800 p-[7px] duration-300 text-center flex justify-center'
+                href={item.id}
+              >
+                {item.title}
+              </a>
+            </li>
+          ))}
           <div>
             <button className='bg-[linear-gradient(90deg,_#6675F7,_#57007B)] px-[20px] py-[7px] rounded-md text-[#FAFAFA] text-[14px]'>
               <a href='#contact-us'>Свяжитесь с нами</a>
