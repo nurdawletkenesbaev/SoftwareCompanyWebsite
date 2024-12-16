@@ -1,4 +1,3 @@
-import { BsArrowRight } from 'react-icons/bs'
 import video from '@/images/videos/video.mp4'
 import HeadingPage from '../pageComponents/HeadingPage'
 import ReactPlayer from 'react-player'

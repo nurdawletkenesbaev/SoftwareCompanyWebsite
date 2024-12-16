@@ -1,7 +1,7 @@
 import img1 from '@/images/caseStudies/web1.jpg'
 import img2 from '@/images/caseStudies/web.jpg'
 import img3 from '@/images/caseStudies/web3.webp'
-import arrow from '@/images/caseStudies/arrow.png'
+// import arrow from '@/images/caseStudies/arrow.png'
 import CaseStudiesCard from './caseStudeisComponents/CaseStudiesCard'
 import HeadingPage from '../pageComponents/HeadingPage'
 
