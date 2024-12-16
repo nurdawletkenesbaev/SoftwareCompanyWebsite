@@ -27,7 +27,7 @@ const App = () => {
       <CaseStudies />
       <GreatSoftWare />
       <OurDesign />
-      <TechStack />
+      {/* <TechStack /> */}
       <HowDevelopment />
       <Resources />
       <HireTopDev />

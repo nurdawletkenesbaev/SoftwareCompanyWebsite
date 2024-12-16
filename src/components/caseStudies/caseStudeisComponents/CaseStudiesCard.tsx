@@ -35,7 +35,7 @@ const CaseStudiesCard: React.FC<Props> = ({
         <p className='leading-7 text-[14px] text-[#4A5568] font-[400] mt-[20px] md:mt-[25px] lg:mt-[30px] mb-[30px] md:mb-[35px] lg:mb-[50px]'>
           {description}
         </p>
-        <div className='flex justify-end'>
+        {/* <div className='flex justify-end'>
           <a
             href=''
             className='flex cursor-pointer items-center text-[14px] bg-gradient-to-r from-[#F76680] to-[#57007B] text-transparent bg-clip-text'
@@ -43,7 +43,7 @@ const CaseStudiesCard: React.FC<Props> = ({
             Читайте далее{' '}
             <img src={arrow} alt='' className='translate-y-[1px]' />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -18,8 +18,8 @@ const RecourseModal: React.FC<props> = ({ image, title, isOpen }) => {
         onClick={() => dispatch(toggleRecourseOpenModal(false))}
         className='absolute items-center z-[22] top-0 bottom-0 right-0 left-0 bg-black backdrop-blur-md opacity-65'
       ></div>
-      <div className='absolute z-[23] h-max translate-y-[-50%] top-[50%] right-[3%] left-[3%] flex flex-col items-center py-[20px] justify=-center bg-white rounded-xl'>
-        <div className='flex w-full justify-end pr-[5%] mb-[15px]'>
+      <div className='absolute z-[23] h-max translate-y-[-50%] top-[50%] translate-x-[-50%] left-[50%] flex flex-col items-center py-[20px] justify=-center bg-transparent w-[96%] md:w-[85%] rounded-xl'>
+        <div className='flex w-full justify-end mb-[15px]'>
           <span
             onClick={() => dispatch(toggleRecourseOpenModal(false))}
             className='text-[25px] cursor-pointer bg-gray-200 duration-100 hover:bg-gray-400 p-[5px] rounded-md'
@@ -27,8 +27,12 @@ const RecourseModal: React.FC<props> = ({ image, title, isOpen }) => {
             <AiOutlineClose />
           </span>
         </div>
-        <div className='border-[1px] border-gray-300 rounded-lg w-full'>
-          <img src={image} alt='' className='w-full' />
+        <div className='flex items-center justify-center rounded-lg '>
+          <img
+            src={image}
+            alt=''
+            className='w-full block border-[1px] border-gray-400 rounded-md max-h-[100vh] object-cover'
+          />
         </div>
         <p className='hidden'>{title}</p>
       </div>

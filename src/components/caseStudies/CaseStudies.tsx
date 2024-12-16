@@ -54,7 +54,7 @@ const CaseStudies = () => {
           />
         ))}
       </div>
-      <div className='flex justify-end mt-[40px]'>
+      {/* <div className='flex justify-end mt-[40px]'>
         <a
           href='#'
           className='flex gap-[10px] items-center bg-gradient-to-r from-[#F76680] to-[#57007B] text-transparent bg-clip-text text-[24px] font-[600]'
@@ -62,7 +62,7 @@ const CaseStudies = () => {
           Читайте другие кейс-исследования{' '}
           <img src={arrow} alt='' className='w-[20px] translate-y-[3px]' />
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }

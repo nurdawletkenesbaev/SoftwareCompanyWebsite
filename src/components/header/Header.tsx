@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <div
       id='top'
-      className='h-[60px] flex justify-between items-center px-[3%] border-b-[1px] border-gray-300 bg-gray-200'
+      className='h-[60px] shadow-lg flex justify-between items-center px-[3%] border-b-[1px] border-gray-300 bg-gray-white'
     >
       <div>
         <Logo />

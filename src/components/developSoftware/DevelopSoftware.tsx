@@ -23,12 +23,12 @@ const DevelopSoftware = () => {
           программного обеспечения, которая гарантирует успешную доставку вашего
           проекта.
         </p>
-        <a className='flex items-center gap-[10px] text-[#57007B] text-[16px] cursor-pointer'>
+        {/* <a className='flex items-center gap-[10px] text-[#57007B] text-[16px] cursor-pointer'>
           Увидеть больше информации{' '}
           <span>
             <BsArrowRight />
           </span>
-        </a>
+        </a> */}
       </div>
       <div className='w-full md:w-[50%] h-full relative  '>
         <ReactPlayer
